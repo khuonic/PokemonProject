@@ -1,8 +1,12 @@
+
 .link a {
     color: black; 
 }
 .link a:hover {
     text-decoration: none;
+}
+.navball{
+    width:10%;
 }
 
   

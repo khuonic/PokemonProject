@@ -1,7 +1,7 @@
 
 
         <footer class="font-small ">
-            <div class=" text-center py-3 " >
+            <div class=" text-center py-3 links " >
                 <img src ="ressources/logo-pokemon-company.svg" alt="img nintendo">
                 <br>
                 <br>

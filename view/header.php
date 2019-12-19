@@ -9,7 +9,7 @@
     <title>Pokéducation</title>
 </head>
     <body>
-     <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth"> 
+     <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth sticky-top "> 
         <!-- <img class="navbar-brand" src="ressources/pokeball.png" alt=""> -->
         <ul class="nav">
             <li class="nav-item">

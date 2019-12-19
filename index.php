@@ -1,4 +1,6 @@
 <?php
 require('controller/controller.php');
 
-require('view/template.php');
+// require('view/template.php');
+
+home();
