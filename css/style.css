@@ -1,7 +1,7 @@
-a {
+.link a {
     color: black; 
 }
-a:hover {
+.link a:hover {
     text-decoration: none;
 }
 
