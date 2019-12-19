@@ -9,7 +9,26 @@
     <title>Pokéducation</title>
 </head>
     <body>
-  
+     <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth bg-dark"> 
+        <!-- <img class="navbar-brand" src="ressources/pokeball.png" alt=""> -->
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Histoire</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Générations</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Médias</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Pop-culture</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Quizz</a>
+            </li>
+        </ul>
+     </nav>
 
 
 
