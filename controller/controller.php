@@ -25,8 +25,18 @@ function popCulture () {
     require('view/pop-culture.php');
 }
 function quizz () {
+
+    $questions = getQuestions();   
     require('view/quizz.php');
 }
+
+function question()
+{
+    $question = getQuestion($_GET['id']);    
+    $answers = getAnswers($_GET['question_id']);
+
+}
+
 function quizzAnswer() {
     require('view/quizzAnswer.php');
 }
