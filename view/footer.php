@@ -2,10 +2,12 @@
 
         <footer class="font-small ">
             <div class=" text-center py-3 links " >
-                <img src ="ressources/logo-pokemon-company.svg" alt="img nintendo">
+                <?php echo'<img src ="ressources/logo-pokemon-company.svg" alt="img nintendo" />';?>
                 <br>
                 <br>
-                <img src ="ressources/logo-nintendo.svg" alt="img nintendo">
+                <?php
+                  echo '<img src="ressources/logo-nintendo.svg" alt="img nintendo">';                 
+                ?>
                 <br>
                 <br>
                 <a href="https://www.pokemon.com/fr/conditions-d-utilisation/">
@@ -23,3 +25,4 @@
         </footer>
     </body>
 </html>
+
