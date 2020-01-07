@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .links a {
     color: black; 
 }
@@ -5,3 +9,17 @@
     text-decoration: none;
 }
 
+.carousel-item{
+    height: 800px;
+} 
+.carousel-item img{
+    height: 800px;
+}
+
+.carousel-inner h5{
+    color:red;
+}
+
+
+
+  
