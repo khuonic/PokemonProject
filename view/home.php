@@ -10,10 +10,15 @@
     <title>Pokéducation</title>
 </head>
     <body>
-        <header>
-            <div class="header">
-                <!-- <img class="navbar-brand" src="ressources/pokeball.png" alt=""> -->
-                <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth sticky-top mr-auto ml-auto"> 
+    
+        <header >
+                 <div class="embed-responsive embed-responsive-16by9" >
+                    <video autoplay muted loop>
+                        <source src="ressources/homepage.mp4" type="video/mp4" style="position:absolute;">
+                    </video>
+                </div>
+            <div>
+                <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth mr-auto ml-auto fixed-top"> 
                     <ul class="nav">
                         <li class="nav-item">
                             <a href="#" class="nav-link">Histoire</a>
@@ -32,17 +37,11 @@
                         </li>
                     </ul>
                 </nav>
-                
-
-                <div class="embed-responsive embed-responsive-16by9">
-                    <video autoplay muted loop poster>
-                        <source src="ressources/homepage.mp4" type="video/mp4">
-                    </video>
-                </div>
             </div>
         </header>
 
-        <footer class="font-small ">
+        
+        <footer class="font-small " >
             <div class=" text-center py-3 links " >
                 <img src ="ressources/logo-pokemon-company.svg" alt="img nintendo">
                 <br>
@@ -63,5 +62,6 @@
                 </text>
             </div>
         </footer>
+        
     </body>
 </html>
