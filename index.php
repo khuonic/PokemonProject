@@ -25,7 +25,7 @@ elseif(isset($_GET['pop-culture'])){
 }
 elseif(isset($_GET['quizz'])){
     quizz();
-    question();
+
 }
 elseif ($_GET['action'] == 'quizzResult') {
     quizzAnswer();

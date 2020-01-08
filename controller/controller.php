@@ -30,9 +30,8 @@ function quizz () {
     require('view/quizz.php');
 }
 
-function question()
-{
-    $question = getQuestion($_GET['id']);    
+function answers()
+{  
     $answers = getAnswers($_GET['question_id']);
 
 }
