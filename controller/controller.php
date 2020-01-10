@@ -9,33 +9,42 @@ function home() {
 function histoire() {
     require('view/histoireView.php');
 }
+
+
 function generations () {
     require('view/generations.php');
 }
+
+
 function seriesAndFilms() {
     require('view/series_et_films.php');
 }
+
+
 function cards () {
     require('view/cartes.php');
 }
+
+
 function mangas() {
     require('view/mangas.php');
 }
+
+
 function popCulture () {
+    $articles = getArticle();
     require('view/pop-culture.php');
 }
-function quizz () {
 
-    $questions = getQuestions();   
+
+function quizz () {
+    $questions = getQuestions();
     require('view/quizz.php');
 }
-
-function answers()
-{  
-    $answers = getAnswers($_GET['question_id']);
-
+function quizzMatchAnswers($questionId){
+    $answers = getAnswers($questionId);
+    return $answers;
 }
-
 function quizzAnswer() {
     require('view/quizzAnswer.php');
 }

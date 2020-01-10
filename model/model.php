@@ -13,6 +13,13 @@ function dbConnect(){
     }
 }
 
+function getArticle(){
+    $db = dbConnect();
+
+    $req = $db->query('SELECT id, Title, Articles FROM Article ORDER BY RAND()');
+    return $req;
+}
+
 function getQuestions() {
 
     $db = dbConnect();
@@ -20,23 +27,11 @@ function getQuestions() {
     return $req;
 }
 
-function getQuestion($questionId){
-	
-    $db = dbConnect();
-
-    $req = $db->prepare('SELECT id, Question  FROM Questions WHERE id = ?');
-    $req->execute(array($questionId));
-    $question = $req->fetch();
-
-    return $question;
-}
-
 function getAnswers($questionId){
 	
     $db = dbConnect();
 
-    $answers = $db->prepare('SELECT id_answer, answer  FROM comments WHERE question_id = ? ');
-    $answers->execute(array($questionId));
-
-    return $answers;
-}
+    $req = $db->prepare('SELECT question_id, id_answer, answer, correct  FROM Answers WHERE question_id = ? ');
+    $req->execute(array($questionId));
+    return $req;
+};
