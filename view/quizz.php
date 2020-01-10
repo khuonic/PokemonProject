@@ -3,6 +3,9 @@
  ob_start(); 
 ini_set('display_errors', 1);
 ?>
+
+
+
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-8 text-center mb-4 mt-4">
@@ -29,21 +32,26 @@ ini_set('display_errors', 1);
         ?>
             <div class="col-sm-12">
                 <div class="form-group">
-                    <input type="radio" name="<?= $dataQ['id']?>" value="<?= $dataA['id_answer']?>" > <?= htmlspecialchars($dataA['answer']);?> </div>
+                    <input type="radio" name="<?= $dataQ['id']?>" value="<?= $dataA['id_answer']?>" id="<?= $dataA['id_answer']?>"> <label for="<?= $dataA['id_answer']?>"><?= htmlspecialchars($dataA['answer']);?> </label>  </div>
             </div>
         <?php 
             }
         }
         $answers->closeCursor();
         ?>
-       
+
+<script>
+
+
+
+</script>  
 
 <?php
 }
 $questions->closeCursor();
 ?>
-
-<button type="submit" class="btn btn-primary" name="save">Valider</button>
+<div id="alert"></div>
+<button type="submit" class="btn btn-primary" name="save" onclick = "return valForm()">Valider</button>
             </form>
         </div>
     </div>

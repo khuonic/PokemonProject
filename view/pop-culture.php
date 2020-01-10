@@ -17,8 +17,11 @@ while ($data = $articles->fetch()){
             <p class="card-text">
             <?php
             // On affiche le contenu du billet
-            echo htmlspecialchars($data['Article']);
+            echo htmlspecialchars($data['Articles']);
             ?>
+            </p>
+        </div>
+    </div>
 <?php
 }
 $articles->closeCursor();
