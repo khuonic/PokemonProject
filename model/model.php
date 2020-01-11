@@ -35,3 +35,4 @@ function getAnswers($questionId){
     $req->execute(array($questionId));
     return $req;
 };
+

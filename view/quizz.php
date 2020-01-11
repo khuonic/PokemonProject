@@ -27,12 +27,15 @@ ini_set('display_errors', 1);
                         </div>
                     </fieldset>
                     <?php $answers = quizzMatchAnswers($dataQ['id']);?>
-                    <?php while($dataA = $answers->fetch(PDO::FETCH_ASSOC)){
+                    <?php 
+                        $note = 0 ;
+                    while($dataA = $answers->fetch(PDO::FETCH_ASSOC)){                       
                         if($dataA["question_id"] == $dataQ['id']){
+
                     ?>
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <input type="radio" name="<?= $dataQ['id']?>" value="<?= $dataA['id_answer']?>" id="<?= $dataA['id_answer']?>"  style="cursor:pointer;">
+                            <input type="radio" name="<?= $dataQ['id']?>" value="<?= $dataA['correct']?>" id="<?= $dataA['id_answer']?>"  style="cursor:pointer;">
                             <label for="<?= $dataA['id_answer']?>" style="cursor:pointer;"><?= htmlspecialchars($dataA['answer']);?> </label>  
                            
                         </div>
@@ -60,7 +63,9 @@ ini_set('display_errors', 1);
 
 </script>
 <?php 
+        
     }
+   
 }
 $answers->closeCursor();
 ?>
