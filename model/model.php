@@ -37,13 +37,9 @@ function getAnswers($questionId){
     return $req;
 };
 
-<<<<<<< HEAD
-print_r(getQuestions());
-=======
 function getUsers(){
     $db = dbConnect();
     $req = $db-> query('SELECT Username, Mdp FROM Authentification') ;  
     return $req;
 }
 
->>>>>>> 908357662b42042fafa3760ea002e7f5b8e73a77
