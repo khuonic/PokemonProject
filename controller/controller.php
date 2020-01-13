@@ -48,3 +48,28 @@ function quizzMatchAnswers($questionId){
 function quizzAnswer() {
     require('view/quizzAnswer.php');
 }
+function checkUser(){
+    $erreur = null;
+    $dataUser = getUsers();
+    while($User = $dataUser->fetch()){
+        $User['Username'] . $User['Mdp'];
+    }
+    if(!empty($_POST['username']) && !empty($_POST['password'])){
+        if($_POST['username'] === 'Username' && $_POST['password'] === 'Mdp'){
+            session_start();
+            $_SESSION['connected'] = 1;
+        }else{
+            $erreur = "Champs Vide";
+        }
+    }
+    $dataUser->closeCursor();
+}
+
+function is_connected(){
+    checkUser();
+    if (session_status() === PHP_SESSION_NONE){
+        session_start();
+    }
+    return !empty($_SESSION['connected']);
+}
+

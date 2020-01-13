@@ -1,8 +1,17 @@
 
 html {
     scroll-behavior: smooth;
+    height : 100%;
 }
-
+body{
+    min-height: 100%;
+    margin : 0;
+    padding : 0;
+    position: relative;
+}
+footer{
+    bottom:0;
+}
 /* #popupbox{
     display:none;
     margin: 0; 

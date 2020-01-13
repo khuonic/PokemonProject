@@ -4,7 +4,7 @@
 function dbConnect(){
     try
     {
-        $db = new PDO('mysql:host=localhost;dbname=Quizz_Pokemon;charset=utf8', 'root', 'kevinkevin');
+        $db = new PDO('mysql:host=localhost;dbname=Quizz;charset=utf8', 'root', 'toto');
         return $db;
     }
     catch(Exception $e)
@@ -37,4 +37,13 @@ function getAnswers($questionId){
     return $req;
 };
 
+<<<<<<< HEAD
 print_r(getQuestions());
+=======
+function getUsers(){
+    $db = dbConnect();
+    $req = $db-> query('SELECT Username, Mdp FROM Authentification') ;  
+    return $req;
+}
+
+>>>>>>> 908357662b42042fafa3760ea002e7f5b8e73a77
