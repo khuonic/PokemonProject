@@ -14,24 +14,30 @@ ini_set('display_errors', 1);
                     $note+=1;
                 }
             }
+            echo "<h3> Votre Score : </h3>";
+            echo $note . "/8<br><br /><br />";
+            
+            
             if($note <= 2) {
-                echo "<h2>Vous etes nazes</h2>";
+                echo '<span class="alert alert-danger">Retournez vous entraîner dans les hautes herbes !</span><br /><br />';
             }
 
             elseif($note >2 && $note <=4) {
-                echo "<h2>Vous pouvez mieux faire</h2>";
+                echo '<span class="alert alert-danger">Vous n\'êtes pas à la hauteur </span><br /><br />';
             }
             elseif($note >4 && $note <=6) {
-                echo "<h2>Franchement pas dégueu</h2>";
+                echo '<span class="alert alert-warning">Vous pouvez mieux faire ! </span><br /><br />';
             }
             elseif($note >6 && $note <8) {
-                echo "<h2>Presque parfait</h2>";
+                echo '<span class="alert alert-success">Encore un petit effort pour être le meilleur !</span><br /><br />';
             }
             elseif($note == 8) {
-                echo "<h2>Au top </h2>";
+                echo '<span class="alert alert-success">Vous êtes le meilleur dresseur !</span><br /><br />';
             }
-            echo $note . "/8";
+            
             ?>
+            <br>
+            <a href="index.php?quizz"><button class ="btn btn-primary">Retentez votre chance !</button></a>
         </div>
     </div>
 </div>

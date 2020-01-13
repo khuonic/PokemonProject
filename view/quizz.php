@@ -58,14 +58,10 @@ ini_set('display_errors', 1);
             return formValid;
         }
         return true
-    }
-    
-
+    }  
 </script>
-<?php 
-        
-    }
-   
+<?php        
+    }  
 }
 $answers->closeCursor();
 ?>

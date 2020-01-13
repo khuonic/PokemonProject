@@ -3,6 +3,22 @@ html {
     scroll-behavior: smooth;
 }
 
+/* #popupbox{
+    display:none;
+    margin: 0; 
+    margin-left: 40%; 
+    margin-right: 40%;
+    margin-top: 50px; 
+    padding-top: 10px; 
+    width: 20%; 
+    height: 150px; 
+    position: absolute; 
+    background: #FBFBF0; 
+    border: solid #000000 2px; 
+    z-index: 9; 
+    font-family: arial; 
+    
+} */
 .links a {
     color: black; 
 }
@@ -20,6 +36,7 @@ html {
 .carousel-inner h5{
     color:red;
 }
+
 
 
 
