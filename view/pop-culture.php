@@ -1,4 +1,4 @@
-<?phprequire_once('controller/controller.php');
+<?php require_once('controller/controller.php');
  ob_start(); 
 ini_set('display_errors', 1);
 ?>
@@ -31,11 +31,14 @@ while ($data = $articles->fetch()){
 }
 $articles->closeCursor();
 ?>
-<?php if(is_connected()){ ?>
+<?php 
+if(is_connected()){ ?>
     <div class="row justify-content-center">
-        <a href="" class="btn btn-info">Add</a>
+        <a href="index.php?newArticle" class="btn btn-info">Add</a>
     </div>
-<?php }?>
+    
+<?php }
+;?>
 
 
 

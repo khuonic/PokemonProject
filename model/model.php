@@ -4,7 +4,7 @@
 function dbConnect(){
     try
     {
-        $db = new PDO('mysql:host=localhost;dbname=Quizz;charset=utf8', 'root', 'toto');
+        $db = new PDO('mysql:host=localhost;dbname=Quizz_Pokemon;charset=utf8', 'root', 'kevinkevin');
         return $db;
     }
     catch(Exception $e)
@@ -23,7 +23,11 @@ function getArticle(){
 function getQuestions() {
 
     $db = dbConnect();
+<<<<<<< HEAD
     $req = $db-> query('SELECT id, Question FROM Questions ORDER BY RAND() LIMIT 8 ') ;
+=======
+    $req = $db-> query('SELECT id, Question FROM Questions ORDER BY RAND() LIMIT 8 ') ;  
+>>>>>>> bf5f5599a086af7513400d8fbaada0764a0a39ca
     return $req;
 }
 
@@ -38,7 +42,7 @@ function getAnswers($questionId){
 
 function getUsers(){
     $db = dbConnect();
-    $req = $db-> query('SELECT Username, Mdp FROM Authentification') ;  
+    $req = $db-> prepare('SELECT id, Username, Mdp, compte FROM Authentification WHERE id = ? ') ;  
+    $req->execute(array('1,2'));
     return $req;
 }
-
