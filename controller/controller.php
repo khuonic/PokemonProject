@@ -51,17 +51,18 @@ function quizzAnswer() {
 function checkUser(){
     $erreur = null;
     $dataUser = getUsers();
-    while($User = $dataUser->fetch()){
-        $User['Username'] . $User['Mdp'];
-    }
-    if(!empty($_POST['username']) && !empty($_POST['password'])){
-        if($_POST['username'] === 'Username' && $_POST['password'] === 'Mdp'){
-            session_start();
-            $_SESSION['connected'] = 1;
-        }else{
-            $erreur = "Champs Vide";
+   while( $User = $dataUser->fetch()){ 
+       if(!empty($_POST['username']) && !empty($_POST['password'])){
+            if($_POST['username'] === $User['Username'] && $_POST['password'] === $User['Mdp']){
+                session_start();
+                $_SESSION['connected'] = 1;
+            }else{
+                $erreur = "Champs Vide";
+                echo $erreur ;
+            }
         }
-    }
+    }       
+   
     $dataUser->closeCursor();
 }
 
@@ -73,3 +74,7 @@ function is_connected(){
     return !empty($_SESSION['connected']);
 }
 
+function newArticle() {
+
+    require('view/newArticle.php');
+}

@@ -45,7 +45,7 @@
                 <center><a href="javascript:login('hide');">close</a></center> 
             </div> 
             <?php var_dump($_POST);
-            var_dump($dataUser[0]);
+            
             ?>
         </footer>
     </body>

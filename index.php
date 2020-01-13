@@ -29,6 +29,9 @@ elseif(isset($_GET['quizz'])){
 elseif ($_GET['action'] == 'quizzResult') {
     quizzAnswer();
 }
+elseif(isset($_GET['newArticle'])){
+    newArticle();
+}
 else {
     home();
 }
