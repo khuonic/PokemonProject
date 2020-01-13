@@ -23,8 +23,9 @@ function getArticle(){
 function getQuestions() {
 
     $db = dbConnect();
-    $req = $db-> query('SELECT id, Question FROM Questions ORDER BY RAND() LIMIT 8 ') ;  
-    return $req;
+    $req = $db-> query('SELECT id, Question FROM Questions ORDER BY RAND() LIMIT 8 ') ;
+    $eq = $req->fetch();
+    return $eq;
 }
 
 function getAnswers($questionId){
@@ -36,3 +37,4 @@ function getAnswers($questionId){
     return $req;
 };
 
+print_r(getQuestions());
