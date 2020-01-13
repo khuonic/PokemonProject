@@ -17,7 +17,7 @@ ini_set('display_errors', 1);
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-8 text-center">
-            <form method ="post" action="index.php?action=quizzResult" name ="radioForm" >
+            <form method ="post" action="index.php?action=quizz" name ="radioForm" >
 <?php while ($dataQ = $questions->fetch(PDO::FETCH_ASSOC)){?>
                     <fieldset class="form-group">
                         <div class="row">
@@ -26,12 +26,20 @@ ini_set('display_errors', 1);
                             </legend>
                         </div>
                     </fieldset>
+<<<<<<< Updated upstream
                     <?php $answers = quizzMatchAnswers($dataQ['id']);?>
                     <?php 
                         $note = 0 ;
                     while($dataA = $answers->fetch(PDO::FETCH_ASSOC)){                       
                         if($dataA["question_id"] == $dataQ['id']){
 
+=======
+                    <?php $answers = quizzMatchAnswers($dataQ['id']);
+                        $note = 0;
+                    ?>
+                    <?php while($dataA = $answers->fetch(PDO::FETCH_ASSOC)){
+                        if($dataA["question_id"] == $dataQ['id']){      
+>>>>>>> Stashed changes
                     ?>
                     <div class="col-sm-12">
                         <div class="form-group">
