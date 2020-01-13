@@ -46,7 +46,6 @@ function quizzMatchAnswers($questionId){
     return $answers;
 }
 function quizzAnswer() {
-
     require('view/quizzAnswer.php');
 }
 function checkUser(){

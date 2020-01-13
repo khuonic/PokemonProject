@@ -23,8 +23,9 @@ function getArticle(){
 function getQuestions() {
 
     $db = dbConnect();
-    $req = $db-> query('SELECT id, Question FROM Questions ORDER BY RAND() LIMIT 8 ') ;  
-    return $req;
+    $req = $db-> query('SELECT id, Question FROM Questions ORDER BY RAND() LIMIT 8 ') ;
+    $eq = $req->fetch();
+    return $eq;
 }
 
 function getAnswers($questionId){
@@ -36,9 +37,13 @@ function getAnswers($questionId){
     return $req;
 };
 
+<<<<<<< HEAD
+print_r(getQuestions());
+=======
 function getUsers(){
     $db = dbConnect();
     $req = $db-> query('SELECT Username, Mdp FROM Authentification') ;  
     return $req;
 }
 
+>>>>>>> 908357662b42042fafa3760ea002e7f5b8e73a77
