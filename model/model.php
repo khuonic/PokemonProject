@@ -24,8 +24,7 @@ function getQuestions() {
 
     $db = dbConnect();
     $req = $db-> query('SELECT id, Question FROM Questions ORDER BY RAND() LIMIT 8 ') ;
-    $eq = $req->fetch();
-    return $eq;
+    return $req;
 }
 
 function getAnswers($questionId){

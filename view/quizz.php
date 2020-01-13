@@ -26,20 +26,12 @@ ini_set('display_errors', 1);
                             </legend>
                         </div>
                     </fieldset>
-<<<<<<< Updated upstream
                     <?php $answers = quizzMatchAnswers($dataQ['id']);?>
                     <?php 
                         $note = 0 ;
                     while($dataA = $answers->fetch(PDO::FETCH_ASSOC)){                       
                         if($dataA["question_id"] == $dataQ['id']){
 
-=======
-                    <?php $answers = quizzMatchAnswers($dataQ['id']);
-                        $note = 0;
-                    ?>
-                    <?php while($dataA = $answers->fetch(PDO::FETCH_ASSOC)){
-                        if($dataA["question_id"] == $dataQ['id']){      
->>>>>>> Stashed changes
                     ?>
                     <div class="col-sm-12">
                         <div class="form-group">
