@@ -1,6 +1,13 @@
-
-
-        <footer class="font-small ">
+<script language="JavaScript" type="text/javascript">
+    function login(showhide){
+    if(showhide == "show"){
+        document.getElementById('popupbox').style.display="block";
+    }else if(showhide == "hide"){
+        document.getElementById('popupbox').style.display="none"; 
+    }
+    }
+</script>
+        <footer  >
             <div class=" text-center py-3 links " >
                 <?php echo'<img src ="ressources/logo-pokemon-company.svg" alt="img nintendo" />';?>
                 <br>

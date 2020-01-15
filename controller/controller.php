@@ -49,24 +49,21 @@ function quizzAnswer() {
     require('view/quizzAnswer.php');
 }
 function checkUser(){
-   if(isset($_POST['username'])){
+   if(!empty($_POST['username']) && !empty($_POST['password'])){
         $erreur = null;
         $dataUser = getUsers($_POST['username']);
         while( $User = $dataUser->fetch()){ 
             if(!empty($_POST['username']) && !empty($_POST['password'])){
                 if($_POST['password'] === $User['Mdp']){
-                    session_start();
                     $_SESSION['connected'] = 1;
-                
                 }else{
                     $erreur = 'coucou';
                     echo $erreur ;
                 }
-            }
-        }   
+            }   
         $dataUser->closeCursor();    
-}
-    
+        }
+    }
 }
 
 function is_connected(){
@@ -77,10 +74,18 @@ function is_connected(){
     return !empty($_SESSION['connected']);
 }
 
-function newArticle() {
+function logout(){
+    require('view/logout.php');
+}
 
+function newArticleForm() {
     require('view/newArticle.php');
 }
+function newArticleSave(){
+    $create = createArticles($_POST['title'], $_POST['text'], $_POST['author']);
+}
+
+
 function newQuestions() {
 
     require('view/newQuestions.php');
@@ -92,6 +97,3 @@ function newAnswers(){
 function questionCreated(){
     $questionCreated = createQuestion($_POST['question']);
 }
-// function answersCreated(){
-//     $answerCreated = createAnswers($_POST[]);
-// }

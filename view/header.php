@@ -1,4 +1,4 @@
-<?php require('js/javascript.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,6 +47,9 @@
                 <li class="nav-item">
                     <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?quizz') ){ echo 'class=" nav-link active"'; } ?> href="index.php?quizz" class="nav-link">Quizz</a>
                 </li>
+                <?php if(is_connected()):?>
+                    <li class="nav-item"><a href="index.php?action=logout" class="nav-link">Se déconnecter</a></li>
+                <?php endif?>
             </ul>
         </nav>
 

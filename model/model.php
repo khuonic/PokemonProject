@@ -4,7 +4,7 @@
 function dbConnect(){
     try
     {
-        $db = new PDO('mysql:host=localhost;dbname=Quizz_Pokemon;charset=utf8', 'root', 'kevinkevin');
+        $db = new PDO('mysql:host=localhost;dbname=Quizz;charset=utf8', 'root', 'toto');
         return $db;
     }
     catch(Exception $e)
@@ -59,3 +59,9 @@ function createAnswers($question_Id, $answer,$correct) {
     $create = $req -> execute([$question_Id,  $answer, $correct]); 
 }
 
+
+function createArticles($title, $content, $author){
+    $db = dbConnect();
+    $create = $db->prepare("INSERT INTO Article (Title, Articles, Author) VALUES (?, ?, ?) ");
+    $req = $create->execute(array($title, $content, $author));
+}

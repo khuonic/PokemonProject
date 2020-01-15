@@ -19,7 +19,7 @@ ini_set('display_errors', 1);
     <div class="row justify-content-center">
         <div class="col-8 text-center">
             <form method ="post" action="index.php?action=quizzResult" name ="radioForm" >
-<?php while ($dataQ = $questions->fetch(PDO::FETCH_ASSOC)){?>
+                <?php while ($dataQ = $questions->fetch(PDO::FETCH_ASSOC)){?>
                     <fieldset class="form-group">
                         <div class="row">
                              <legend class="col-form-label col-sm-12 mb-2">
@@ -41,28 +41,24 @@ ini_set('display_errors', 1);
                            
                         </div>
                     </div>
-
-
-<?php        
-    }  
-}
-$answers->closeCursor();
-?>
-<?php
-}
-$questions->closeCursor();
-?>
-<div id="alert" ></div>
-<button type="submit" class="btn btn-primary" name="save" onclick =" return isChecked()">Valider</button>
+                    <?php        
+                        }  
+                    }
+                    $answers->closeCursor();
+                    ?>
+                <?php
+                }
+                $questions->closeCursor();
+                ?>
+                <div id="alert" ></div>
+                <button type="submit" class="btn btn-primary" name="save" onclick =" return isChecked()">Valider</button>
             </form>
-<?php 
-    if(is_connected()){ ?>
-    <br>
-        <a href="index.php?newQuestions" class="btn btn-info">Add new Questions</a>   
-<?php }
-;?>
+                <?php 
+                    if(is_connected()){ ?>
+                    <br>
+                        <a href="index.php?newQuestions" class="btn btn-info">Add new Questions</a>   
+                <?php }?>
         </div>
-
     </div>
 </div>
 
