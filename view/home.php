@@ -15,8 +15,8 @@
     <body>
     
         <header >
-                 <div class="embed-responsive embed-responsive-16by9" >
-                    <video autoplay muted loop>
+                 <div  style="position:relative">
+                    <video autoplay muted loop style="width:100%">
                         <source src="ressources/homepage.mp4" type="video/mp4" style="position:absolute;">
                     </video>
                 </div>
@@ -57,7 +57,7 @@
         </header>
 
         
-        <footer class="font-small " >
+        <footer class="font-small footer" >
             <div class=" text-center py-3 links " >
                 <img src ="ressources/logo-pokemon-company.svg" alt="img nintendo">
                 <br>

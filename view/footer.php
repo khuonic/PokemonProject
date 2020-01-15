@@ -1,12 +1,4 @@
-<script language="JavaScript" type="text/javascript">
-    function login(showhide){
-    if(showhide == "show"){
-        document.getElementById('popupbox').style.display="block";
-    }else if(showhide == "hide"){
-        document.getElementById('popupbox').style.display="none"; 
-    }
-    }
-</script>
+
 
         <footer class="footer font-small bg-light mt-5">
             <div class=" text-center py-3 links " >
@@ -35,18 +27,15 @@
             <div id="popupbox" style="display:none;"> 
                 <form name="login" action="" method="post">
                     <center>Username:</center>
-                    <center><input name="username" size="14" /></center>
+                    <center><input name="username" type="text"/></center>
                     <center>Password:</center>
-                    <center><input name="password" type="password" size="14" /></center>
+                    <center><input name="password" type="text" size="14" /></center>
                     <br>                   
                     <center><button type="submit" class="btn btn-primary" name="save" >Valider</button></center>
                 </form>
                 <br />
                 <center><a href="javascript:login('hide');">close</a></center> 
             </div> 
-            <?php var_dump($_POST);
-            
-            ?>
         </footer>
     </body>
 </html>

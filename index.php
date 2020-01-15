@@ -32,6 +32,17 @@ elseif ($_GET['action'] == 'quizzResult') {
 elseif(isset($_GET['newArticle'])){
     newArticle();
 }
+elseif(isset($_GET['newQuestions'])){
+    newQuestions();
+}
+elseif($_GET['action'] == 'questionCreated') {
+    questionCreated();
+    newAnswers();
+}
+elseif($_GET['action'] == 'answersCreated') {
+    answersCreated();
+   quizz();
+}
 else {
     home();
 }

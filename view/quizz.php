@@ -1,4 +1,5 @@
 <?php require_once('controller/controller.php'); ?>
+
 <?php
  ob_start(); 
 ini_set('display_errors', 1);
@@ -17,7 +18,7 @@ ini_set('display_errors', 1);
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-8 text-center">
-            <form method ="post" action="index.php?action=quizz" name ="radioForm" >
+            <form method ="post" action="index.php?action=quizzResult" name ="radioForm" >
 <?php while ($dataQ = $questions->fetch(PDO::FETCH_ASSOC)){?>
                     <fieldset class="form-group">
                         <div class="row">
@@ -41,25 +42,7 @@ ini_set('display_errors', 1);
                         </div>
                     </div>
 
-<script>
-    function isChecked() {
-        var answ = document.getElementsByName('<?= $dataQ['id']?>');
-        var formValid = false;
-        
-        var i = 0;
-        while(!formValid && i < answ.length){
-            if (answ[i].checked) 
-                formValid = true;
-                i++;    
-        }
-        if (!formValid) {
-            var msg = '<span style="color:red;" class="alert alert-danger">Veuillez répondre à toutes les questions</span><br /><br />';
-            document.getElementById('alert').innerHTML = msg;          
-            return formValid;
-        }
-        return true
-    }  
-</script>
+
 <?php        
     }  
 }
@@ -72,7 +55,14 @@ $questions->closeCursor();
 <div id="alert" ></div>
 <button type="submit" class="btn btn-primary" name="save" onclick =" return isChecked()">Valider</button>
             </form>
+<?php 
+    if(is_connected()){ ?>
+    <br>
+        <a href="index.php?newQuestions" class="btn btn-info">Add new Questions</a>   
+<?php }
+;?>
         </div>
+
     </div>
 </div>
 

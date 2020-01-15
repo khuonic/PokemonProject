@@ -31,14 +31,31 @@ function getAnswers($questionId){
 	
     $db = dbConnect();
 
-    $req = $db->prepare('SELECT question_id, id_answer, answer, correct  FROM Answers WHERE question_id = ? ');
+    $req = $db->prepare('SELECT question_id, id_answer, answer, correct  FROM Answers WHERE question_id = ? ORDER BY RAND() ');
     $req->execute(array($questionId));
     return $req;
 };
 
-function getUsers(){
+function getUsers($username){
     $db = dbConnect();
-    $req = $db-> prepare('SELECT id, Username, Mdp, compte FROM Authentification WHERE id = ? ') ;  
-    $req->execute(array('1,2'));
+    if ($req = $db-> prepare('SELECT id, Mdp FROM Authentification WHERE Username = ? ')) {
+        $req->execute(array($username));
     return $req;
+    } 
+    
+   
 }
+
+function createQuestion($question) {
+
+    $db = dbConnect();
+    $req =$db -> prepare ("INSERT INTO Questions (Question) VALUES (?)");
+    $create = $req -> execute([$question]); 
+}
+
+function createAnswers($question_Id, $answer,$correct) {
+    $db = dbConnect();
+    $req =$db -> prepare ("INSERT INTO Answers (question_id, answer, correct) VALUES (?,?,?)");
+    $create = $req -> execute([$question_Id,  $answer, $correct]); 
+}
+

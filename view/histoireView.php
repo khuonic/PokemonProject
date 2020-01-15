@@ -3,7 +3,7 @@
 ini_set('display_errors', 1);
 ?>
 
-
+<div class='wrapper'></div>
 
 <?php $content = ob_get_clean(); ?>
 
