@@ -13,13 +13,13 @@ ini_set('display_errors', 1);
                     <div class="form-group  ">
                         <label for="formGroupExampleInput">Réponse 1 : </label>   Vrai
                         <input type="radio"  name="vrai">
-                        <input type="text" class="form-control"  name="answer1">
+                        <input type="text" class="form-control"  name="answer" required>
                         <label for="formGroupExampleInput">Réponse 2 :</label>   Vrai
                         <input type="radio"  name="vrai">
-                        <input type="text" class="form-control"  name="answer2">
+                        <input type="text" class="form-control"  name="answer" required>
                         <label for="formGroupExampleInput">Réponse 3 : </label>   Vrai
                         <input type="radio"  name="vrai">
-                        <input type="text" class="form-control"  name="answer3" >
+                        <input type="text" class="form-control"  name="answer" required>
                     </div>
                     <div class="form-group col-12">
                         <button type="submit" class="btn btn-primary" name="save">Create Answers </button>

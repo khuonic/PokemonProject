@@ -5,8 +5,6 @@
 ini_set('display_errors', 1);
 ?>
 
-
-
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-8 text-center mb-4 mt-4">
