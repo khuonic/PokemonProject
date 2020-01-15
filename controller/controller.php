@@ -49,24 +49,21 @@ function quizzAnswer() {
     require('view/quizzAnswer.php');
 }
 function checkUser(){
-   if(isset($_POST['username'])){
+    
+   if(!empty($_POST['username']) && !empty($_POST['password'])){
         $erreur = null;
         $dataUser = getUsers($_POST['username']);
-        while( $User = $dataUser->fetch()){ 
-            if(!empty($_POST['username']) && !empty($_POST['password'])){
-                if($_POST['password'] === $User['Mdp']){
-                    session_start();
-                    $_SESSION['connected'] = 1;
-                
-                }else{
-                    $erreur = 'coucou';
-                    echo $erreur ;
-                }
-            }
-        }   
-        $dataUser->closeCursor();    
+        $User = $dataUser->fetch();
+            if($_POST['password'] === $User['Mdp']){
+                session_start();
+                $_SESSION['connected'] =1;           
+            }else{
+                $erreur = 'coucou';
+                echo $erreur ;
+            }                 
+        $dataUser->closeCursor();        
 }
-    
+  
 }
 
 function is_connected(){
@@ -92,6 +89,6 @@ function newAnswers(){
 function questionCreated(){
     $questionCreated = createQuestion($_POST['question']);
 }
-// function answersCreated(){
-//     $answerCreated = createAnswers($_POST[]);
-// }
+function answersCreated(){
+    $answerCreated = createAnswers($_POST['answer'],$_POST['vrai']);
+}

@@ -5,8 +5,6 @@
 ini_set('display_errors', 1);
 ?>
 
-
-
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-8 text-center mb-4 mt-4">
@@ -53,7 +51,7 @@ $answers->closeCursor();
 $questions->closeCursor();
 ?>
 <div id="alert" ></div>
-<button type="submit" class="btn btn-primary" name="save" onclick =" return isChecked()">Valider</button>
+<button type="submit" class="btn btn-primary" name="save" onclick =" return isChecked(<?= $dataQ['id']?>)">Valider</button>
             </form>
 <?php 
     if(is_connected()){ ?>

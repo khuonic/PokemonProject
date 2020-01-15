@@ -38,24 +38,24 @@ function getAnswers($questionId){
 
 function getUsers($username){
     $db = dbConnect();
-    if ($req = $db-> prepare('SELECT id, Mdp FROM Authentification WHERE Username = ? ')) {
+    $req = $db-> prepare('SELECT id, Mdp FROM Authentification WHERE Username = ? ');
         $req->execute(array($username));
     return $req;
-    } 
-    
-   
+  
 }
 
 function createQuestion($question) {
 
     $db = dbConnect();
     $req =$db -> prepare ("INSERT INTO Questions (Question) VALUES (?)");
-    $create = $req -> execute([$question]); 
+    $req -> execute([$question]);
+    $req2=$db->lastInsertId($question);
+    return $req2;
 }
 
-function createAnswers($question_Id, $answer,$correct) {
+function createAnswers($answer,$correct) {
     $db = dbConnect();
     $req =$db -> prepare ("INSERT INTO Answers (question_id, answer, correct) VALUES (?,?,?)");
-    $create = $req -> execute([$question_Id,  $answer, $correct]); 
+    $create = $req -> execute([$lastid,$answer, $correct]); 
 }
 

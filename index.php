@@ -41,7 +41,7 @@ elseif($_GET['action'] == 'questionCreated') {
 }
 elseif($_GET['action'] == 'answersCreated') {
     answersCreated();
-   quizz();
+    quizz();
 }
 else {
     home();

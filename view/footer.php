@@ -1,5 +1,4 @@
 
-
         <footer class="font-small ">
             <div class=" text-center py-3 links " >
                 <?php echo'<img src ="ressources/logo-pokemon-company.svg" alt="img nintendo" />';?>
@@ -24,17 +23,18 @@
                 <text>©2019 Pokémon. ©1995–2019 Nintendo / Creatures Inc. / GAME FREAK inc. Pokémon et Nintendo Switch sont des marques de Nintendo. ©2019 Nintendo.
                 </text>
             </div>
-            <div id="popupbox" style="display:none;"> 
-                <form name="login" action="" method="post">
-                    <center>Username:</center>
-                    <center><input name="username" type="text"/></center>
-                    <center>Password:</center>
-                    <center><input name="password" type="text" size="14" /></center>
-                    <br>                   
-                    <center><button type="submit" class="btn btn-primary" name="save" >Valider</button></center>
-                </form>
-                <br />
-                <center><a href="javascript:login('hide');">close</a></center> 
+            <div id="popupbox" style="display:none;" class="row justify-content-center"> 
+                <div class="col-12 justify-content-center text-center">
+                    <form name="login" action="" method="post" >
+                        <label for="formGroupExampleInput">Username:</label>
+                        <input name="username" type="text" required/>
+                        Password:
+                        <input name="password" type="password" size="14" required/>
+                        <br>                   
+                        <button type="submit" class="btn btn-primary mt-2" name="save" >Valider</button>
+                    </form>
+                    <a href="javascript:login('hide');"><button class="btn btn-danger mt-2">close</button></a> 
+                </div>  
             </div> 
         </footer>
     </body>

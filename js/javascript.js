@@ -1,6 +1,13 @@
-<script>
-function isChecked() {
-        var answ = document.getElementsByName('<?= $dataQ['id']?>');
+
+function login(showhide){
+    if(showhide == "show"){
+        document.getElementById('popupbox').style.display="block";
+    }else if(showhide == "hide"){
+        document.getElementById('popupbox').style.display="none"; 
+    }
+}
+function isChecked(data) {
+        var answ = document.getElementsByName('data');
         var formValid = false;
         
         var i = 0;
@@ -16,13 +23,7 @@ function isChecked() {
         }
         return true
 }  
-function login(showhide){
-    if(showhide == "show"){
-        document.getElementById('popupbox').style.display="block";
-    }else if(showhide == "hide"){
-        document.getElementById('popupbox').style.display="none"; 
-    }
-}
 
-</script>
+
+
 
