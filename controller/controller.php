@@ -92,6 +92,6 @@ function newAnswers(){
 function questionCreated(){
     $questionCreated = createQuestion($_POST['question']);
 }
-function answersCreated(){
-    $answerCreated = createAnswers($_POST[]);
-}
+// function answersCreated(){
+//     $answerCreated = createAnswers($_POST[]);
+// }
