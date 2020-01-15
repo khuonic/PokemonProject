@@ -1,6 +1,6 @@
 
 
-        <footer class="footer font-small bg-light mt-5">
+        <footer class="font-small ">
             <div class=" text-center py-3 links " >
                 <?php echo'<img src ="ressources/logo-pokemon-company.svg" alt="img nintendo" />';?>
                 <br>
@@ -10,13 +10,13 @@
                 ?>
                 <br>
                 <br>
-                <a target ="_blank" href="https://www.pokemon.com/fr/conditions-d-utilisation/">
+                <a href="https://www.pokemon.com/fr/conditions-d-utilisation/">
                 Conditions d'utilisation
                 </a> |
-                <a target ="_blank" href="https://www.pokemon.com/fr/avis-de-confidentialite/"> 
+                <a href="https://www.pokemon.com/fr/avis-de-confidentialite/"> 
                 Avis de confidentialité
                 </a> |
-                <a target ="_blank" href="https://www.pokemon.com/fr/juridique/"> Informations juridiques</a>  |
+                <a href="https://www.pokemon.com/fr/juridique/"> Informations juridiques</a>  |
                 
                 <a href="javascript:login('show');"> Admin</a>
                 <br>
