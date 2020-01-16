@@ -1,7 +1,7 @@
 <?php require('header.php'); ?>
 
-   
-        <?= $content ?>
-  
+   <main>       
+        <?= $content ?>      
+   </main>
 
 <?php require('footer.php'); ?>

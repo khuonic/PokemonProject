@@ -23,11 +23,11 @@ elseif(isset($_GET['mangas'])){
 elseif(isset($_GET['pop-culture'])){
     popCulture();
 }
-elseif(isset($_GET['quizz'])){
-    quizz();
+elseif(isset($_GET['quiz'])){
+    quiz();
 }
-elseif ($_GET['action'] == 'quizzResult') {
-    quizzAnswer();
+elseif ($_GET['action'] == 'quizResult') {
+    quizAnswer();
 }
 elseif(isset($_GET['newArticle'])){
     newArticle();
@@ -36,12 +36,12 @@ elseif(isset($_GET['newQuestions'])){
     newQuestions();
 }
 elseif($_GET['action'] == 'questionCreated') {
-    questionCreated();
-    newAnswers();
+    $question_id =  questionCreated();  
+    newAnswers($question_id);  
 }
 elseif($_GET['action'] == 'answersCreated') {
     answersCreated();
-    quizz();
+    header('location:index.php?quiz');
 }
 else {
     home();
