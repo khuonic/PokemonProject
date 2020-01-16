@@ -64,4 +64,5 @@ function createArticles($title, $content, $author){
     $db = dbConnect();
     $create = $db->prepare("INSERT INTO Article (Title, Articles, Author) VALUES (?, ?, ?) ");
     $req = $create->execute(array($title, $content, $author));
+    return $req;
 }

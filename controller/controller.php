@@ -48,22 +48,19 @@ function quizzMatchAnswers($questionId){
 function quizzAnswer() {
     require('view/quizzAnswer.php');
 }
-function checkUser(){
-    
+function checkUser(){   
    if(!empty($_POST['username']) && !empty($_POST['password'])){
         $erreur = null;
         $dataUser = getUsers($_POST['username']);
         $User = $dataUser->fetch();
             if($_POST['password'] === $User['Mdp']){
-                session_start();
                 $_SESSION['connected'] =1;           
             }else{
                 $erreur = 'coucou';
                 echo $erreur ;
             }                 
         $dataUser->closeCursor();        
-}
-  
+    }  
 }
 
 function is_connected(){
