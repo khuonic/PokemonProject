@@ -30,7 +30,11 @@ elseif ($_GET['action'] == 'quizResult') {
     quizAnswer();
 }
 elseif(isset($_GET['newArticle'])){
-    newArticle();
+    newArticleForm();
+}
+elseif($_GET['action'] == 'create'){
+    newArticleSave();
+    popCulture();
 }
 elseif(isset($_GET['newQuestions'])){
     newQuestions();
@@ -42,6 +46,9 @@ elseif($_GET['action'] == 'questionCreated') {
 elseif($_GET['action'] == 'answersCreated') {
     answersCreated();
     header('location:index.php?quiz');
+}
+elseif($_GET['action'] === 'logout'){
+    logout();
 }
 else {
     home();

@@ -75,10 +75,18 @@ function is_connected(){
     return !empty($_SESSION['connected']);
 }
 
-function newArticle() {
+function logout(){
+    require('view/logout.php');
+}
 
+function newArticleForm() {
     require('view/newArticle.php');
 }
+function newArticleSave(){
+    $create = createArticles($_POST['title'], $_POST['text'], $_POST['author']);
+}
+
+
 function newQuestions() {
 
     require('view/newQuestions.php');
@@ -92,6 +100,11 @@ function questionCreated(){
     return $questionCreated;
 }
 function answersCreated(){
+<<<<<<< HEAD
 
     $answerCreated = createAnswers($_POST['idQuestion'],$_POST['answer']);
 }
+=======
+    $answerCreated = createAnswers($_POST['answer'],$_POST['vrai']);
+}
+>>>>>>> 3c346bb2e14f3aa620635c87bf42c8a2e3b5610a

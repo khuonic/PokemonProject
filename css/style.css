@@ -10,6 +10,7 @@ body{
     display:flex;
     flex-direction: column;
 }
+<<<<<<< HEAD
 main {
    flex : 1 0 auto;
 }
@@ -17,6 +18,9 @@ main {
 footer{
  flex-shrink: 0 ;
 }
+=======
+
+>>>>>>> 3c346bb2e14f3aa620635c87bf42c8a2e3b5610a
 /* #popupbox{
     display:none;
     margin: 0; 

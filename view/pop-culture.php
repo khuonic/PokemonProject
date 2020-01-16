@@ -39,7 +39,7 @@ if(is_connected()){ ?>
     </div>
     
 <?php }
-;?>
+?>
 
 
 

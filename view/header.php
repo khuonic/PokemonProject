@@ -46,6 +46,9 @@
                 <li class="nav-item">
                     <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?quiz') ){ echo 'class=" nav-link active"'; } ?> href="index.php?quiz" class="nav-link">Quiz</a>
                 </li>
+                <?php if(is_connected()):?>
+                    <li class="nav-item"><a href="index.php?action=logout" class="nav-link">Se déconnecter</a></li>
+                <?php endif?>
             </ul>
         </nav>
 
