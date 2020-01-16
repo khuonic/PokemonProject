@@ -37,16 +37,17 @@ function popCulture () {
 }
 
 
-function quizz () {
+function quiz () {
     $questions = getQuestions();
-    require('view/quizz.php');
+    require('view/quiz.php');
+
 }
-function quizzMatchAnswers($questionId){
+function quizMatchAnswers($questionId){
     $answers = getAnswers($questionId);
     return $answers;
 }
-function quizzAnswer() {
-    require('view/quizzAnswer.php');
+function quizAnswer() {
+    require('view/quizAnswer.php');
 }
 function checkUser(){   
    if(!empty($_POST['username']) && !empty($_POST['password'])){
@@ -87,13 +88,15 @@ function newQuestions() {
 
     require('view/newQuestions.php');
 }
-function newAnswers(){
+function newAnswers($lastId){
     require('view/newAnswers.php');
 }
 
 function questionCreated(){
     $questionCreated = createQuestion($_POST['question']);
+    return $questionCreated;
 }
 function answersCreated(){
-    $answerCreated = createAnswers($_POST['answer'],$_POST['vrai']);
+
+    $answerCreated = createAnswers($_POST['idQuestion'],$_POST['answer']);
 }

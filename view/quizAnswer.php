@@ -38,7 +38,7 @@ var_dump($_POST);
             
             ?>
             <br>
-            <a href="index.php?quizz"><button class ="btn btn-primary">Retentez votre chance !</button></a>
+            <a href="index.php?quiz"><button class ="btn btn-primary">Retentez votre chance !</button></a>
         </div>
     </div>
 </div>

@@ -24,7 +24,7 @@ ini_set('display_errors', 1);
                             </legend>
                         </div>
                     </fieldset>
-                    <?php $answers = quizzMatchAnswers($dataQ['id']);?>
+                    <?php $answers = quizMatchAnswers($dataQ['id']);?>
                     <?php 
                         $note = 0 ;
                     while($dataA = $answers->fetch(PDO::FETCH_ASSOC)){                       
@@ -33,7 +33,7 @@ ini_set('display_errors', 1);
                     ?>
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <input type="radio" name="<?= $dataQ['id']?>" value="<?= $dataA['correct']?>" id="<?= $dataA['id_answer']?>"  style="cursor:pointer;">
+                            <input type="radio" name="<?= $dataQ['id']?>" value="<?= $dataA['correct']?>" id="<?= $dataA['id_answer']?>"  style="cursor:pointer;" class="radio">
                             <label for="<?= $dataA['id_answer']?>" style="cursor:pointer;"><?= htmlspecialchars($dataA['answer']);?> </label>  
                            
                         </div>
@@ -48,7 +48,8 @@ ini_set('display_errors', 1);
                 $questions->closeCursor();
                 ?>
                 <div id="alert" ></div>
-                <button type="submit" class="btn btn-primary" name="save" >Valider</button>
+
+                <button type="submit" class="btn btn-primary" name="save" onclick =" return isChecked()">Valider</button>
             </form>
                 <?php 
                     if(is_connected()){ ?>
@@ -58,7 +59,6 @@ ini_set('display_errors', 1);
         </div>
     </div>
 </div>
-
 <?php $content = ob_get_clean(); ?>
 
 <?php require('template.php'); ?>

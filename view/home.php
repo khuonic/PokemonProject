@@ -49,7 +49,7 @@
                             <a href="index.php?pop-culture" class="nav-link">Pop-culture</a>
                         </li>
                         <li class="nav-item">
-                            <a href="index.php?quizz" class="nav-link">Quizz</a>
+                            <a href="index.php?quiz" class="nav-link">Quiz</a>
                         </li>
                     </ul>
                 </nav>

@@ -25,6 +25,7 @@ function getQuestions() {
     $db = dbConnect();
     $req = $db-> query('SELECT id, Question FROM Questions ORDER BY RAND() LIMIT 8 ') ;
     return $req;
+    
 }
 
 function getAnswers($questionId){
@@ -50,13 +51,22 @@ function createQuestion($question) {
     $req =$db -> prepare ("INSERT INTO Questions (Question) VALUES (?)");
     $req -> execute([$question]);
     $req2=$db->lastInsertId($question);
-    return $req2;
+   return $req2;
 }
 
-function createAnswers($answer,$correct) {
+function createAnswers($lastId,$answer) {
     $db = dbConnect();
-    $req =$db -> prepare ("INSERT INTO Answers (question_id, answer, correct) VALUES (?,?,?)");
-    $create = $req -> execute([$lastid,$answer, $correct]); 
+    $i = 0 ;
+    foreach($answer as $ans) { 
+        $i ++;     
+        $req =$db -> prepare ("INSERT INTO Answers (question_id, answer, correct) VALUES (?,?,?)");
+        if($i==1) {
+            $correct = "True";
+        }else {
+            $correct = "";
+        }
+        $create = $req -> execute([$lastId,$ans, $correct]);
+    }
 }
 
 
