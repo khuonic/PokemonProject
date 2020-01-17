@@ -1,5 +1,4 @@
 <?php
- 
 require_once('controller/controller.php');
  ob_start(); 
 ini_set('display_errors', 1);

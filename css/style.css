@@ -6,9 +6,14 @@ html {
 }
 body{
     position:relative;
-    height:100%;
+    height:90%;
     display:flex;
     flex-direction: column;
+    color:black;
+}
+video{
+    height: 100vh;
+    width: 100vw;
 }
 main {
    flex : 1 0 auto;
@@ -16,6 +21,7 @@ main {
 
 footer{
  flex-shrink: 0 ;
+ background-color:#868683;
 }
 .links a {
     color: black; 
@@ -33,6 +39,25 @@ footer{
 
 .carousel-inner h5{
     color:red;
+} 
+.nav-style{
+    border-left:2px red solid;
+    border-bottom:2px red solid;
+    border-right:2px red solid;
+    border-radius: 0px 0px 40px 40px;
+    background-color:white;
+    width:48%;
+}
+
+.main-page{
+    border-left: 2px red solid;
+    border-right:2px red solid;
+}
+.border-page-right{
+    background: linear-gradient(to left, #C7C7C7, #3D3D3D );
+}
+.border-page-left{
+    background: linear-gradient(to right, #C7C7C7, #3D3D3D );
 }
 
 #shadow{
@@ -49,8 +74,11 @@ height:72.7px;
 width:80px;
 border:8px solid black;
 /* border-radius:50%; */
+<<<<<<< HEAD
 
 box-shadow: 5px 5px 15px 5px #000000;
+=======
+>>>>>>> c5fd5baf33b24fe4d891e9ee8ba1ae4dd11ea549
 }
 #black-stripe{
 position:absolute;
@@ -107,6 +135,7 @@ border: 0px solid black;
 #rec:hover #circ3{
     cursor:pointer;
     background-color:red;
+<<<<<<< HEAD
     
 }
 #rec:hover{
@@ -125,9 +154,17 @@ transform: rotate(19deg);
 -ms-transform: scale(0.8);
 transform: scale(0.8);
 }
+=======
+}
+#rec:hover{
+cursor:pointer;
+}
+
+>>>>>>> c5fd5baf33b24fe4d891e9ee8ba1ae4dd11ea549
 
 .arrowLeft{
 
+<<<<<<< HEAD
             -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
 }
@@ -136,3 +173,5 @@ transform: scale(0.8);
              
 }
   
+=======
+>>>>>>> c5fd5baf33b24fe4d891e9ee8ba1ae4dd11ea549
