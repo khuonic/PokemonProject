@@ -46,6 +46,40 @@ function quizMatchAnswers($questionId){
     $answers = getAnswers($questionId);
     return $answers;
 }
+function quizResult() {
+    $note = 0 ;
+    foreach($_POST as $id_question => $correct) {
+        if(!empty($correct)) {
+            $note+=1;
+        }
+    }
+    echo "<h3> Votre Score : </h3>";
+    echo $note . "/8<br><br /><br />";
+    if($note <= 2) {
+        $type_alert = "danger";
+        $message = "Retournez vous entraîner dans les hautes herbes" ;
+    }
+
+    elseif($note >2 && $note <=4) {
+        $type_alert = "danger";
+        $message = "Vous n\'êtes pas à la hauteur" ;
+    }
+    elseif($note >4 && $note <=6) {
+        $type_alert = "warning";
+        $message = "Vous pouvez mieux faire ! ";
+        
+    }
+    elseif($note >6 && $note <8) {
+        $type_alert = "success";
+        $message = "Encore un petit effort pour être le meilleur ! " ;
+       
+    }
+    elseif($note == 8) {
+        $type_alert = "success";
+        $message = "Vous êtes le meilleur dresseur !" ;
+    }
+    echo "<span class='alert alert-{$type_alert}'> $message</span><br /><br />";
+}
 function quizAnswer() {
     require('view/quizAnswer.php');
 }
@@ -71,9 +105,10 @@ function is_connected(){
     }
     return !empty($_SESSION['connected']);
 }
-
 function logout(){
-    require('view/logout.php');
+    session_start();
+    session_destroy();
+    header('location:index.php?home');  
 }
 
 function newArticleForm() {
@@ -85,7 +120,6 @@ function newArticleSave(){
 
 
 function newQuestions() {
-
     require('view/newQuestions.php');
 }
 function newAnswers($lastId){
@@ -97,6 +131,6 @@ function questionCreated(){
     return $questionCreated;
 }
 function answersCreated(){
-
     $answerCreated = createAnswers($_POST['idQuestion'],$_POST['answer']);
 }
+

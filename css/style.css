@@ -9,6 +9,7 @@ body{
     height:90%;
     display:flex;
     flex-direction: column;
+    color:black;
 }
 video{
     height: 100vh;
@@ -20,6 +21,7 @@ main {
 
 footer{
  flex-shrink: 0 ;
+ background-color:#868683;
 }
 .links a {
     color: black; 
@@ -46,10 +48,89 @@ footer{
     background-color:white;
     width:48%;
 }
-.bordage{
-    
-    background-image: linear-gradient(red, yellow, blue);
-}
+
 .main-page{
-    background-color: black;
+    border-left: 2px red solid;
+    border-right:2px red solid;
 }
+.border-page-right{
+    background: linear-gradient(to left, #C7C7C7, #3D3D3D );
+}
+.border-page-left{
+    background: linear-gradient(to right, #C7C7C7, #3D3D3D );
+}
+
+
+#rec{
+position:relative;
+/* margin:0 auto; */
+padding: 1px;
+clip-path: circle(35.7% at 50% 50%);
+background-color: black;
+height:72.7px;
+width:80px;
+border:8px solid black;
+/* border-radius:50%; */
+}
+#black-stripe{
+position:absolute;
+width:100%;
+height:19%;
+background-color:black;
+border:1px solid black;
+top:45%;
+border-radius:1%;
+}
+#top{
+width:100%;
+height:45%;
+background-color:#f00000;
+border-radius:0%;
+}
+#bot{
+width:100%;
+height:65%;
+background-color:white;
+border-radius:40%;
+}
+#circ{
+position:absolute;
+margin-left:37.5%;
+margin-right:37.5%;
+background-color:white;
+clip-path: circle(30% at 50% 50%);
+height:100%;
+width:25%;
+/* border-radius:50%;   */
+}
+#circ2{
+position:absolute;
+margin-left:13.5%;
+margin-top:11%;
+margin-right:37.5%;
+background-color:black;
+clip-path: circle(25% at 40% 40%);
+height:80%;
+
+border: 1px solid black;
+}
+#circ3{
+position:absolute;
+margin-left:10.5%;
+margin-right:37.5%;
+margin-top:21%;
+background-color:white;
+clip-path: circle(15% at 50% 50%);
+height:30%;
+border: 0px solid black;
+}
+#rec:hover #circ3{
+    cursor:pointer;
+    background-color:red;
+}
+#rec:hover{
+cursor:pointer;
+}
+
+
+

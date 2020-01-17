@@ -1,18 +1,17 @@
 <?php require_once('controller/controller.php'); ?>
-
 <?php
  ob_start(); 
 ini_set('display_errors', 1);
 ?>
-
 <div class="container-fluid">
     <div class="row">
-        <div class="col-3"><div class="bordage"></div></div>
-        <div class="col-6 text-center main-page">
+        <div class="col-2 border-page-left"></div>
+        <div class="col-8 text-center main-page ">
             <div class="mb-4 mt-4">
                 <h2>Testez vos connaissances de dresseur !</h2>
             </div>
             <form method ="post" action="index.php?action=quizResult" name ="radioForm" >
+    
                 <?php while ($dataQ = $questions->fetch(PDO::FETCH_ASSOC)){?>
                     <fieldset class="form-group">
                         <div class="row">
@@ -51,9 +50,9 @@ ini_set('display_errors', 1);
                     <a href="index.php?newQuestions" class="btn btn-info">Add new Questions</a>   
             <?php }?>
         </div>
+        <div class="col-2 border-page-right"></div>
     </div>
 </div>
-<div class="col-3 border-page"></div>
 <?php $content = ob_get_clean(); ?>
 
 <?php require('template.php'); ?>
