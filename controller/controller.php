@@ -131,12 +131,6 @@ function questionCreated(){
     return $questionCreated;
 }
 function answersCreated(){
-<<<<<<< HEAD
     $answerCreated = createAnswers($_POST['idQuestion'],$_POST['answer']);
 }
 
-=======
-
-    $answerCreated = createAnswers($_POST['idQuestion'],$_POST['answer']);
-}
->>>>>>> 3e3c9e1c5475f0bb7291a7b5fd7deda15529e54b

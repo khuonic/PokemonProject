@@ -4,11 +4,7 @@
 function dbConnect(){
     try
     {
-<<<<<<< HEAD
         $db = new PDO('mysql:host=localhost;dbname=Quiz_Pokemon;charset=utf8', 'root', 'kevinkevin');
-=======
-        $db = new PDO('mysql:host=localhost;dbname=Quizz;charset=utf8', 'root', 'toto');
->>>>>>> 3e3c9e1c5475f0bb7291a7b5fd7deda15529e54b
         return $db;
     }
     catch(Exception $e)

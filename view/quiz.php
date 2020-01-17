@@ -15,13 +15,8 @@ ini_set('display_errors', 1);
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-8 text-center">
-<<<<<<< HEAD
             <form method ="post" action="index.php?action=quizResult" name ="radioForm" >
 <?php while ($dataQ = $questions->fetch(PDO::FETCH_ASSOC)){?>
-=======
-            <form method ="post" action="index.php?action=quizzResult" name ="radioForm" >
-                <?php while ($dataQ = $questions->fetch(PDO::FETCH_ASSOC)){?>
->>>>>>> 3e3c9e1c5475f0bb7291a7b5fd7deda15529e54b
                     <fieldset class="form-group">
                         <div class="row">
                              <legend class="col-form-label col-sm-12 mb-2">
@@ -43,7 +38,6 @@ ini_set('display_errors', 1);
                            
                         </div>
                     </div>
-<<<<<<< HEAD
 
 
 <?php        
@@ -56,17 +50,6 @@ $answers->closeCursor();
 }
 $questions->closeCursor();
 ?>
-=======
-                    <?php        
-                        }  
-                    }
-                    $answers->closeCursor();
-                    ?>
-                <?php
-                }
-                $questions->closeCursor();
-                ?>
->>>>>>> 3e3c9e1c5475f0bb7291a7b5fd7deda15529e54b
                 <div id="alert" ></div>
 
                 <button type="submit" class="btn btn-primary" name="save" onclick =" return isChecked()">Valider</button>
