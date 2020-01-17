@@ -6,9 +6,13 @@ html {
 }
 body{
     position:relative;
-    height:100%;
+    height:90%;
     display:flex;
     flex-direction: column;
+}
+video{
+    height: 100vh;
+    width: 100vw;
 }
 main {
    flex : 1 0 auto;
@@ -33,9 +37,19 @@ footer{
 
 .carousel-inner h5{
     color:red;
+} 
+.nav-style{
+    border-left:2px red solid;
+    border-bottom:2px red solid;
+    border-right:2px red solid;
+    border-radius: 0px 0px 40px 40px;
+    background-color:white;
+    width:48%;
 }
-
-
-
-
-  
+.bordage{
+    
+    background-image: linear-gradient(red, yellow, blue);
+}
+.main-page{
+    background-color: black;
+}

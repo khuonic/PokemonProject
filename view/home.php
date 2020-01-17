@@ -16,12 +16,12 @@
     
         <header >
                  <div  style="position:relative">
-                    <video autoplay muted loop style="width:100%">
+                    <video autoplay muted loop >
                         <source src="ressources/homepage.mp4" type="video/mp4" style="position:absolute;">
                     </video>
                 </div>
             <div>
-                <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth mr-auto ml-auto fixed-top "> 
+                <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth mr-auto ml-auto fixed-top  nav-style"> 
                     <ul class="nav">
                     <?php  
                         $page = $_SERVER['PHP_SELF'];
