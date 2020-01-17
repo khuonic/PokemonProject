@@ -7,8 +7,8 @@ require_once("index.php");
 
 <div class="row justify-content-center">
     <div class="col-8">
-    <a href="index.php?action=create" class="btn btn-primary">Retour à l'écran précédent</a>
-        <form action="index.php?pop-culture" method="POST">
+    <a href="index.php?pop-culture" class="btn btn-primary">Retour à l'écran précédent</a>
+        <form action="index.php?action=create" method="POST">
             <div class="form-group">
                 <label for="title">Titre</label>
                 <input type="text" name= "title" id="title" class="form-control">

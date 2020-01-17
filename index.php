@@ -26,19 +26,21 @@ elseif(isset($_GET['pop-culture'])){
 elseif(isset($_GET['quiz'])){
     quiz();
 }
-elseif ($_GET['action'] == 'quizResult') {
-    quizAnswer();
+elseif(isset($_GET['newQuestions'])){
+    newQuestions();
 }
 elseif(isset($_GET['newArticle'])){
     newArticleForm();
 }
+elseif ($_GET['action'] == 'quizResult') {
+    quizAnswer();
+}
+
 elseif($_GET['action'] == 'create'){
     newArticleSave();
     popCulture();
 }
-elseif(isset($_GET['newQuestions'])){
-    newQuestions();
-}
+
 elseif($_GET['action'] == 'questionCreated') {
     $question_id =  questionCreated();  
     newAnswers($question_id);  

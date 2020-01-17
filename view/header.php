@@ -13,7 +13,7 @@
     <title>Pokéducation</title>
 </head>
     <body >
-        <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth sticky-top bg-light"> 
+        <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth sticky-top bg-light mb-5"> 
             <ul class="nav nav-pills">   
                 <?php  
                     $page = $_SERVER['PHP_SELF'];
