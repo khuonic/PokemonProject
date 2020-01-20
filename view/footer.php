@@ -1,4 +1,4 @@
-        <footer class="font-small footer">
+        <footer class="font-small footer ">
             <div class=" text-center py-3 links " >
                 <?php echo'<img src ="ressources/logo-pokemon-company.svg" alt="img nintendo" />';?>
                 <br>

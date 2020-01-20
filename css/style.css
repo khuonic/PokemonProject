@@ -6,22 +6,39 @@ html {
 }
 body{
     position:relative;
-    height:90%;
+    height:100%;
     display:flex;
     flex-direction: column;
     color:black;
+}
+#body-template{
+    background-image: url('../ressources/background2.png') ;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 video{
     height: 100vh;
     width: 100vw;
 }
+.logo{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    z-index: 2;
+    width:80%;
+}
 main {
    flex : 1 0 auto;
 }
-
+.backQuiz{
+    border:none;
+    background-color:rgba(255,255,255, 0.3);
+}
 footer{
  flex-shrink: 0 ;
- background-color:#868683;
+ background-color:transparent;
 }
 .links a {
     color: black; 
@@ -46,15 +63,17 @@ footer{
     border-right:2px red solid;
     border-radius: 0px 0px 40px 40px;
     background-color:white;
+    background-color:rgba(255,255,255, 0.5);
     width:48%;
 }
 
 .main-page{
-    border-left: 2px red solid;
-    border-right:2px red solid;
+/* 
+    background-color:white; */
 }
 .border-page-right{
     background: linear-gradient(to left, #C7C7C7, #3D3D3D );
+
 }
 .border-page-left{
     background: linear-gradient(to right, #C7C7C7, #3D3D3D );
@@ -65,113 +84,88 @@ footer{
 }
 
 #rec{
-position:relative;
-/* margin:0 auto; */
-padding: 1px;
-clip-path: circle(35.7% at 50% 50%);
-background-color: black;
-height:72.7px;
-width:80px;
-border:8px solid black;
-/* border-radius:50%; */
-<<<<<<< HEAD
-
-box-shadow: 5px 5px 15px 5px #000000;
-=======
->>>>>>> c5fd5baf33b24fe4d891e9ee8ba1ae4dd11ea549
+    position:relative;
+    padding: 1px;
+    clip-path: circle(35.7% at 50% 50%);
+    background-color: black;
+    height:72.7px;
+    width:80px;
+    border:8px solid black;
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 #black-stripe{
-position:absolute;
-width:100%;
-height:19%;
-background-color:black;
-border:1px solid black;
-top:45%;
-border-radius:1%;
+    position:absolute;
+    width:100%;
+    height:19%;
+    background-color:black;
+    border:1px solid black;
+    top:45%;
+    border-radius:1%;
 }
 #top{
-width:100%;
-height:45%;
-background-color:#f00000;
-border-radius:0%;
+    width:100%;
+    height:45%;
+    background-color:#f00000;
+    border-radius:0%;
 }
 #bot{
-width:100%;
-height:65%;
-background-color:white;
-border-radius:40%;
+    width:100%;
+    height:65%;
+    background-color:white;
+    border-radius:40%;
 }
 #circ{
-position:absolute;
-margin-left:37.5%;
-margin-right:37.5%;
-background-color:white;
-clip-path: circle(30% at 50% 50%);
-height:100%;
-width:25%;
-/* border-radius:50%;   */
+    position:absolute;
+    margin-left:37.5%;
+    margin-right:37.5%;
+    background-color:white;
+    clip-path: circle(30% at 50% 50%);
+    height:100%;
+    width:25%;
 }
 #circ2{
-position:absolute;
-margin-left:13.5%;
-margin-top:11%;
-margin-right:37.5%;
-background-color:black;
-clip-path: circle(25% at 40% 40%);
-height:80%;
-
-border: 1px solid black;
+    position:absolute;
+    margin-left:13.5%;
+    margin-top:11%;
+    margin-right:37.5%;
+    background-color:black;
+    clip-path: circle(25% at 40% 40%);
+    height:80%;
+    border: 1px solid black;
 }
 #circ3{
-position:absolute;
-margin-left:10.5%;
-margin-right:37.5%;
-margin-top:21%;
-background-color:white;
-clip-path: circle(15% at 50% 50%);
-height:30%;
-border: 0px solid black;
+    position:absolute;
+    margin-left:10.5%;
+    margin-right:37.5%;
+    margin-top:21%;
+    background-color:white;
+    clip-path: circle(15% at 50% 50%);
+    height:30%;
+    border: 0px solid black;
 }
 #rec:hover #circ3{
     cursor:pointer;
-    background-color:red;
-<<<<<<< HEAD
-    
+    background-color:red; 
 }
 #rec:hover{
-cursor:pointer;
--moz-transform: rotate(19deg);
--webkit-transform: rotate(19deg);
--o-transform: rotate(19deg);
--ms-transform: rotate(19deg);
-transform: rotate(19deg);
-
+    cursor:pointer;
+    -moz-transform: rotate(19deg);
+    -webkit-transform: rotate(19deg);
+    -o-transform: rotate(19deg);
+    -ms-transform: rotate(19deg);
+    transform: rotate(19deg);
 }
 #rec:active{
     -moz-transform: scale(0.8);
--webkit-transform: scale(0.8);
--o-transform: scale(0.8);
--ms-transform: scale(0.8);
-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
 }
-=======
-}
-#rec:hover{
-cursor:pointer;
-}
-
->>>>>>> c5fd5baf33b24fe4d891e9ee8ba1ae4dd11ea549
 
 .arrowLeft{
-
-<<<<<<< HEAD
-            -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
-.arrowRight {
 
-             
-}
-  
-=======
->>>>>>> c5fd5baf33b24fe4d891e9ee8ba1ae4dd11ea549
+

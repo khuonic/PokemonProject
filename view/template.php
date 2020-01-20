@@ -1,6 +1,6 @@
 <?php require('header.php'); ?>
-
-   <main>       
+<!-- <img src="ressources/background.png" alt='background'> -->
+   <main class="mt-5">       
         <?= $content ?>      
    </main>
 

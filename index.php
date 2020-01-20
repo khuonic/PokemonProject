@@ -26,31 +26,34 @@ elseif(isset($_GET['pop-culture'])){
 elseif(isset($_GET['quiz'])){
     quiz();
 }
-
 elseif(isset($_GET['newArticle'])){
     newArticleForm();
 }
 elseif(isset($_GET['newQuestions'])){
     newQuestions();
 }
-elseif(isset($_GET['action']) == 'create'){
-    newArticleSave();
-    popCulture();
+elseif (isset($_GET['action'])) {
+    if($_GET['action'] == 'quizResult') {
+        quizAnswer();
+    }  
+    elseif($_GET['action'] === 'create'){
+        newArticleSave();
+        popCulture();
+    }
+    
+    elseif($_GET['action'] === 'questionCreated') {
+        $question_id =  questionCreated();  
+        newAnswers($question_id);  
+    }
+    elseif($_GET['action'] === 'answersCreated') {
+        answersCreated();
+        header('location:index.php?quiz');
+    }
+    elseif($_GET['action'] === 'logout'){
+        logout();
+    } 
 }
-elseif (isset($_GET['action']) == 'quizResult') {
-    quizAnswer();
-}
-elseif(isset($_GET['action']) == 'questionCreated') {
-    $question_id =  questionCreated();  
-    newAnswers($question_id);  
-}
-elseif(isset($_GET['action']) == 'answersCreated') {
-    answersCreated();
-    header('location:index.php?quiz');
-}
-elseif(isset($_GET['action']) === 'logout'){
-    logout();
-}
+
 else {
     home();
 }

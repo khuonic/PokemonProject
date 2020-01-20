@@ -15,11 +15,12 @@
     <body>
     
         <header >
-                 <div  style="position:relative">
-                    <video autoplay muted loop >
-                        <source src="ressources/homepage.mp4" type="video/mp4" style="position:absolute;">
-                    </video>
-                </div>
+            <div  style="position:relative">
+                <video autoplay muted loop >
+                    <source src="ressources/homepage.mp4" type="video/mp4" style="position:fixed;">      
+                </video>
+                <img src="ressources/pokedex5.png" alt="logo" style="position:absolute;z-index:2;top:30%;left:20%;">               
+            </div>
             <div>
                 <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth mr-auto ml-auto fixed-top  nav-style"> 
                     <ul class="nav">
@@ -55,7 +56,6 @@
                 </nav>
             </div>
         </header>
-
         
         <footer class="font-small footer" >
             <div class=" text-center py-3 links " >
