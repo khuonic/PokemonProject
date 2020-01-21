@@ -26,5 +26,13 @@ function isChecked() {
         return false       
     }                  
 } 
+$(window).on('load, resize',function upDateNav(){
+    if($(window).width()<990){
+        $('.nav-style').removeClass('ml-auto');
+    }
+    if($(window).width()>=990){
+        $('.nav-style').addClass('ml-auto');
+    }
+});
 
 

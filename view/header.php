@@ -10,67 +10,59 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     <script src="js/javascript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Pokéducation</title>
 </head>
     <body id="body-template">
         <div class="bg-image"></div>
-        <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth fixed-top bg-light "> 
-            <div id="shadow " class="navbar-toggler"  data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
-                    <div id="rec">
-                        <div id="black-stripe">
-                                <div id="circ">
-                                    <button id="circ2">
-                                        <button id="circ3">
-                                       
+        <div class="sideNav">
+                <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth mr-auto ml-auto fixed-top  nav-style "> 
+                    <div id="shadow " class="navbar-toggler "  data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <div id="rec">
+                            <div id="black-stripe">
+                                    <div id="circ">
+                                        <button id="circ2">
+                                            <button id="circ3">
+                                        
+                                            </button>
                                         </button>
-                                    </button>
+                                    </div>
                                 </div>
-                            </div>
-                        <div id="top"></div>
-                        <div id="bot"></div>
-                    </div>
-                </div>
-            <div class="collapse navbar-collapse justify-content-around sticky-top" id ="nav-content">
-                <ul class="nav nav-pills">   
-                    <?php  
-                        $page = $_SERVER['PHP_SELF'];
-                    ?>
-                    <li  class="nav-item">
-                        <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?home') ){ echo 'class=" nav-link active"'; } ?> href="index.php?home" class="nav-link">Home</a>
-                        </li>
-                    <li  class="nav-item">
-                        <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?histoire') ){ echo 'class=" nav-link active"'; } ?> href="index.php?histoire" class="nav-link ">Histoire</a>
-                    </li>
-                    <li class="nav-item">  
-                        <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?Generations') ){ echo 'class=" nav-link active"'; } ?> href="index.php?Generations" class="nav-link">Générations</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?series_et_films') ){ echo 'class=" nav-link active dropdown-toggle"'; } ?> 
-                        <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?cartes') ){ echo 'class=" nav-link active dropdown-toggle"'; } ?>
-                        <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?mangas') ){ echo 'class=" nav-link active dropdown-toggle"'; } ?>
-                    class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Médias
-                        </a>
-                        <div class="dropdown-menu link" aria-labelledby="navbarDropdown">
-                            <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?series_et_films') ){ echo 'class=" nav-link active"'; } ?> class="dropdown-item" href="index.php?series_et_films">Séries et films</a>
-                            <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?cartes') ){ echo 'class=" nav-link active"'; } ?> class="dropdown-item" href="index.php?cartes">Cartes à jouer</a>
-                            <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?mangas') ){ echo 'class=" nav-link active"'; } ?> class="dropdown-item" href="index.php?mangas">Mangas</a>
+                            <div id="top"></div>
+                            <div id="bot"></div>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?pop-culture') ){ echo 'class=" nav-link active"'; } ?> href="index.php?pop-culture" class="nav-link">Pop-culture</a>
-                    </li>
-                    <li class="nav-item">
-                        <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?quiz') ){ echo 'class=" nav-link active"'; } ?> href="index.php?quiz" class="nav-link">Quiz</a>
-                    </li>
-                    <?php if(is_connected()):?>
-                        <li class="nav-item"><a href="index.php?action=logout" class="nav-link">Se déconnecter</a></li>
-                    <?php endif?>
-                </ul>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse justify-content-around sticky-top " id ="nav-content">
+                        <ul class="nav navUl">
+                        <?php  
+                            $page = $_SERVER['PHP_SELF'];
+                        ?>
+                            <li  class="nav-item">
+                                <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?home') ){ echo 'class=" nav-link active"'; } ?> href="index.php?home" class="nav-link"><img src="ressources/pokedex5.png" alt="logoNav"  id="logoNav"></a>
+                            </li>
+                            <li  class="nav-item">
+                                <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?histoire') ){ echo 'class=" nav-link active"'; } ?> href="index.php?histoire" class="nav-link ">Histoire</a>
+                            </li>
+                            <li class="nav-item">  
+                                <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?Generations') ){ echo 'class=" nav-link active"'; } ?> href="index.php?Generations" class="nav-link">Générations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?pop-culture') ){ echo 'class=" nav-link active"'; } ?> href="index.php?pop-culture" class="nav-link">Pop-culture</a>
+                            </li>
+                            <li class="nav-item">
+                                <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?quiz') ){ echo 'class=" nav-link active"'; } ?> href="index.php?quiz" class="nav-link">Quiz</a>
+                            </li>
+                            <?php if(is_connected()):?>
+                                <li class="nav-item"><a href="index.php?action=logout" class="nav-link">Se déconnecter</a></li>
+                            <?php endif?>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </nav>
 
 
 
-    
+
+            

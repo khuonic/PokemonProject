@@ -89,9 +89,12 @@ function checkUser(){
         $dataUser = getUsers($_POST['username']);
         $User = $dataUser->fetch();
             if($_POST['password'] === $User['Mdp']){
+                if (session_status() === PHP_SESSION_NONE){
+                    session_start();
+                }
                 $_SESSION['connected'] =1;           
             }else{
-                $erreur = 'coucou';
+                $erreur = 'Identifiants incorrects';
                 echo $erreur ;
             }                 
         $dataUser->closeCursor();        
