@@ -19,7 +19,6 @@ while ($data = $articles->fetch()){
                 <div class="card-body">
                     <p class="card-text">
                     <?php
-                    // On affiche le contenu du billet
                     echo htmlspecialchars($data['Articles']);
                     ?>
                     </p>

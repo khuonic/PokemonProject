@@ -115,7 +115,38 @@ function newArticleForm() {
     require('view/newArticle.php');
 }
 function newArticleSave(){
-    $create = createArticles($_POST['title'], $_POST['text'], $_POST['author']);
+    $fileName = getArticleFile();
+    $create = createArticles($_POST['title'], $_POST['text'], $_POST['author'], $fileName);
+}
+function getArticleFile(){
+    if(isset($_POST['submit'])){
+        $fileName = $_FILES['userfile']['name'];
+        $fileSize = $_FILES['userfile']['size'];
+        $fileError = $_FILES['userfile']['error'];
+        $fileTmpName = $_FILES['userfile']['tmp_name'];
+
+        $fileEXT = explode('.', $fileName);
+        $fileActualEXT = strtolower(end($fileEXT));
+        $extAllowed = array('jpg', 'jpeg', 'png', 'pdf');
+
+        if(in_array($fileActualEXT, $extAllowed)){
+            if($fileError === 0){
+                if($fileSize < 100000){
+                    $fileNameNew = uniqid('', true).".".$fileActualEXT;
+                    $fileDestination = 'ressources/'.$fileNameNew;
+                    move_uploaded_file($fileTmpName, $fileDestination);
+                    return $fileNameNew;
+                }else{
+                    echo "L'image est trop lourde.";
+                }
+            }else{
+                echo "Il y a eu une erreur lors de l'enregistrement de l'image.";
+            }
+        }else{
+            echo "Ce type d'image n'est pas autorisé.";
+        }
+
+    }
 }
 
 

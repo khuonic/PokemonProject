@@ -82,7 +82,13 @@ footer{
 #shadow{
     filter: drop-shadow(-1px 4px 3px rgba(50, 50, 0, 0.5));
 }
-
+/* #pokdex-container{
+    width:20px;
+    position:absolute;
+}
+#pokedex{
+    width:100%;
+} */
 #rec{
     position:relative;
     padding: 1px;

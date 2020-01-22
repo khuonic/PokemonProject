@@ -8,7 +8,11 @@ require_once("index.php");
 <div class="row justify-content-center">
     <div class="col-8">
     <a href="index.php?pop-culture" class="btn btn-primary">Retour à l'écran précédent</a>
-        <form action="index.php?action=create" method="POST">
+        <form action="index.php?action=create"  method="POST" enctype="multipart/form-data">
+            <div class="form-group mt-3">
+            <input type="hidden" name="MAX_FILE_SIZE" value="3000"/>
+                Ajouter une image: <input name="userfile" type="file"/>
+            </div>
             <div class="form-group">
                 <label for="title">Titre</label>
                 <input type="text" name= "title" id="title" class="form-control">
@@ -21,7 +25,7 @@ require_once("index.php");
                 <label for="author"> Auteur</label>
                 <input type="text" name= "author" id="author" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary">Créer</button>
+            <button type="submit" name="submit" class="btn btn-primary">Créer</button>
         </form>
     </div>
 </div>

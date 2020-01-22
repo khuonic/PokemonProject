@@ -15,11 +15,21 @@
     <body>
     
         <header >
-            <div  style="position:relative">
+            <div  style="position:relative; overflow:hidden">
                 <video autoplay muted loop >
                     <source src="ressources/homepage.mp4" type="video/mp4" style="position:fixed;">      
                 </video>
-                <img src="ressources/pokedex5.png" alt="logo" style="position:absolute;z-index:2;top:30%;left:20%;">               
+                <img src="ressources/pokedex5.png" alt="logo" style="position:absolute;z-index:2;top:30%;left:20%;"> 
+                <!-- <div class="d-flex justify-content-between" >
+                    <div class="col-8">
+                        <img src="ressources/pokedex13.png" alt="pokedex"  style="position:absolute;z-index:3;bottom:0; height: 100vh"> 
+                    </div>
+                    <div class="col-8">
+                        <img src="ressources/pokedex12.png" alt="pokedex"  style="position:absolute;z-index:3;bottom:0; height: 100vh">
+                    </div> -->
+                </div>
+                
+                
             </div>
             <div>
                 <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth mr-auto ml-auto fixed-top  nav-style"> 
@@ -29,7 +39,7 @@
                     ?>
                         <li class="nav-item">
                             <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?home') ){ echo 'class=" nav-link active"'; } ?>href="index.php?home" class="nav-link">Home</a>
-                         </li>
+                        </li>
                         <li class="nav-item">
                             <a href="index.php?histoire" class="nav-link">Histoire</a>
                         </li>

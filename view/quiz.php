@@ -17,7 +17,7 @@ ini_set('display_errors', 1);
             <div class="card " style=" border:none;
     background-color:rgba(255,255,255, 0.3);">
                 <div class="card-body " >
-                    <form method ="post" action="index.php?action=quizResult" name ="radioForm" >
+                    <form method ="post" action="index.php?action=quizResult" enctype="multipart/form-data" name ="radioForm" >
         <?php while ($dataQ = $questions->fetch(PDO::FETCH_ASSOC)){?>
                             <fieldset class="form-group">
                                 <div class="row">
