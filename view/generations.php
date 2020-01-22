@@ -4,85 +4,115 @@
 ini_set('display_errors', 1);
 ?>
 
-    <div class="containder-fluid">
-        <div class="row justify-content-center">
-            <div id="carouselExampleCaptions" class=" col-6 carousel slide carousel-fade container" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
+    <div class="containder-fluid mt-5" style="overflow: hidden;">
+            <div class="col-2">
+                <ol class="carousel-indicators row ">
+                    <li data-target="#slideshow1" data-slide-to="0" class=" col-12" onclick="$('#slideshow2').carousel(0)">
+                        <img src="ressources/rougebleu.png" >
+                    </li>
+                    <li data-target="#slideshow1" data-slide-to="1" class="col-12" onclick="$('#slideshow2').carousel(1)"> 
+                        <img src="ressources/orargent.png">
+                    </li>
+                    <li data-target="#slideshow1" data-slide-to="2" class="col-12" onclick="$('#slideshow2').carousel(2)"> 
+                        <img src="ressources/rubissaphir.png">
+                    </li>
+                    <li data-target="#slideshow1" data-slide-to="3" class="col-12" onclick="$('#slideshow2').carousel(3)">
+                        <img src="ressources/rouge-bleu.png">
+                    </li>
+                    <li data-target="#slideshow1" data-slide-to="4" class="col-12" onclick="$('#slideshow2').carousel(4)"> 
+                        <img src="ressources/rouge-bleu.png">
+                    </li>
+                    <li data-target="#slideshow1" data-slide-to="5" class="col-12" onclick="$('#slideshow2').carousel(5)"> 
+                        <img src="ressources/rouge-bleu.png">
+                    </li>
+                    <li data-target="#slideshow1" data-slide-to="6" class="col-12" onclick="$('#slideshow2').carousel(6)"> 
+                        <img src="ressources/rouge-bleu.png">
+                    </li>
+                    <li data-target="#slideshow1" data-slide-to="7" class="col-12" onclick="$('#slideshow2').carousel(7)"> 
+                        <img src="ressources/rouge-bleu.png">
+                    </li>
                 </ol>
+            </div>
+        <div class="row ">
+            <div  id="slideshow1" class=" col-md-6 col-lg-6  col-sm-9 carousel container " data-interval="false">
+               
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="https://oracionark.files.wordpress.com/2018/06/20180623_rgby_01.jpg?w=336&h=300&crop=1" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Pokemon 1ère Génération</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </div>
+                        <img src="ressources/rouge-bleu.png" class="d-block w-100 magictime spaceInDown" alt=" version rouge-bleu" >
                     </div>
                     <div class="carousel-item">
-                    <img src="https://iforo.3djuegos.com/files_foros/bf/bfu4.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Pokemon 2ème Génération</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                        <img src="ressources/or-argent.png" class="d-block w-100 magictime spaceInDown" alt="version or-argent">
                     </div>
                     <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Pokemon 3ème Génération</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
+                        <img src="ressources/rubis-saphir.png" class="d-block w-100 magictime spaceInDown" alt="version rubis-saphir">
                     </div>
                     <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Pokemon 4ème Génération</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
+                        <img src="ressources/diamant-perle.png" class="d-block w-100 magictime spaceInDown" alt="version diamant-perle">
                     </div>
                     <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Pokemon 5ème Génération</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
+                        <img src="ressources/noire-blanche.png" class="d-block w-100 magictime spaceInDown" alt="version noire-blanche">
                     </div>
                     <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Pokemon 6ème Génération</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
+                        <img src="ressources/x-y.png" class="d-block w-100 magictime spaceInDown" alt="version x-y">
                     </div>
                     <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Pokemon 7ème Génération</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
+                        <img src="ressources/soleil-lune.png" class="d-block w-100 magictime spaceInDown" alt="version soleil-lune">
                     </div>
                     <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Pokemon 8ème Génération</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
+                        <img src="ressources/epee-bouclier-2.png" class="d-block w-100 magictime spaceInDown" alt="version épée-bouclier">
+
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#slideshow1" role="button" data-slide="prev" onclick="$('#slideshow2').carousel('prev')">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#slideshow1" role="button" data-slide="next" onclick="$('#slideshow2').carousel('next')">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
+            </div>
+            <div id="slideshow2" class=" col-md-7 col-lg-7  col-sm-9 carousel  container mt-5 " data-interval="false">
+                <div class="carousel-inner innerP">
+                    <div class="carousel-item active text-center magictime spaceInDown">                       
+                            <h5>Pokemon 1ère Génération</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tenetur maxime veritatis id consequatur dolorum itaque architecto aliquid officiis placeat. Porro libero distinctio rerum quaerat quos, nihil numquam incidunt cumque.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum harum debitis provident vitae dignissimos nulla sint, veniam deleniti similique unde. Quibusdam laudantium et molestias officia error accusamus in quae magnam.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates facilis illo vel, at veritatis, deleniti cumque commodi optio vitae iste quidem odio exercitationem similique recusandae ut dolorem impedit, ab adipisci.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nulla quis vitae officia! Nam quia amet, nesciunt laborum consectetur ratione, accusantium aspernatur nihil numquam praesentium esse fuga hic saepe rem.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et vero, esse doloremque excepturi suscipit labore, ipsam quos cupiditate delectus exercitationem, saepe voluptate omnis impedit corporis accusantium explicabo nemo officia at.
+                            </p>                      
+                    </div>
+                    <div class="carousel-item text-center magictime spaceInDown">                     
+                            <h5>Pokemon 2ère Génération</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                    <div class="carousel-item text-center magictime spaceInDown">
+                            <h5>Pokemon 3ère Génération</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                    <div class="carousel-item text-center magictime spaceInDown">
+                            <h5>Pokemon 4ère Génération</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                    <div class="carousel-item text-center magictime spaceInDown">
+                            <h5>Pokemon 5ère Génération</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                    <div class="carousel-item text-center magictime spaceInDown">
+                            <h5>Pokemon 6ère Génération</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                    <div class="carousel-item text-center magictime spaceInDown">
+                            <h5>Pokemon 7ère Génération</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                    <div class="carousel-item text-center magictime spaceInDown">
+                            <h5>Pokemon 8ère Génération</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -25,7 +25,7 @@
     <!-- Page Content -->
    
             <div class="sideNav">
-                <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth mr-auto ml-auto fixed-top  nav-style "> 
+                <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth mr-auto ml-auto fixed-top  navHome "> 
                     <div id="shadow " class="navbar-toggler "  data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
                         <div id="rec">
                             <div id="black-stripe">

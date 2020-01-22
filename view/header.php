@@ -11,6 +11,7 @@
     
     <script src="js/javascript.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/magic.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Pokéducation</title>
 </head>
@@ -18,9 +19,9 @@
         <div class="bg-image"></div>
         <div class="sideNav">
                 <nav class = "navbar navbar-expand-lg justify-content-center container-fullwidth mr-auto ml-auto fixed-top  nav-style "> 
-                    <div id="shadow " class="navbar-toggler "  data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
-                        <div id="rec">
-                            <div id="black-stripe">
+                    <div id="shadow " class="navbar-toggler magictime foolishIn"  data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <div id="rec" >
+                            <div id="black-stripe" >
                                     <div id="circ">
                                         <button id="circ2">
                                             <button id="circ3">

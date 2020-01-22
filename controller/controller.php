@@ -62,7 +62,7 @@ function quizResult() {
 
     elseif($note >2 && $note <=4) {
         $type_alert = "danger";
-        $message = "Vous n\'êtes pas à la hauteur" ;
+        $message = "Vous n'êtes pas à la hauteur" ;
     }
     elseif($note >4 && $note <=6) {
         $type_alert = "warning";
