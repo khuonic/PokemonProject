@@ -11,16 +11,13 @@ while ($data = $articles->fetch()){
     <div class="row justify-content-center">
         <div class="col-4 text-center mb-4 mt-4">
             <div class="card  mb-3">
-                <div  class="card-header">
+            <img class="card-img-top" src="ressources/<?= htmlspecialchars($data['Picture'])?>" alt="Card image cap">
+                <div class="card-body">
                     <h3>
                         <?= htmlspecialchars($data['Title']); ?>
                     </h3>
-                </div>
-                <div class="card-body">
                     <p class="card-text">
-                    <?php
-                    echo htmlspecialchars($data['Articles']);
-                    ?>
+                    <?= htmlspecialchars($data['Articles']);?>
                     </p>
                 </div>
             </div>
@@ -30,6 +27,7 @@ while ($data = $articles->fetch()){
 <?php
 }
 $articles->closeCursor();
+var_dump($_FILES['userfile']['error']);
 ?>
 <?php 
 if(is_connected()){ ?>

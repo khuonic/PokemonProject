@@ -17,7 +17,7 @@ function dbConnect(){
 function getArticle(){
     $db = dbConnect();
 
-    $req = $db->query('SELECT id, Title, Articles FROM Article ORDER BY RAND()');
+    $req = $db->query('SELECT id, Title, Articles, Picture FROM Article ORDER BY RAND()');
     return $req;
 }
 

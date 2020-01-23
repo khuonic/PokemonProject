@@ -2,7 +2,7 @@
 <?php
  ob_start(); 
 ini_set('display_errors', 1);
-var_dump($_POST);
+
 ?>
 
 <div class="container-fluid">

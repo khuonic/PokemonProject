@@ -10,7 +10,6 @@ require_once("index.php");
     <a href="index.php?pop-culture" class="btn btn-primary">Retour à l'écran précédent</a>
         <form action="index.php?action=create"  method="POST" enctype="multipart/form-data">
             <div class="form-group mt-3">
-            <input type="hidden" name="MAX_FILE_SIZE" value="3000"/>
                 Ajouter une image: <input name="userfile" type="file"/>
             </div>
             <div class="form-group">

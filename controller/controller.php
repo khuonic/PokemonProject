@@ -62,7 +62,7 @@ function quizResult() {
 
     elseif($note >2 && $note <=4) {
         $type_alert = "danger";
-        $message = "Vous n\'êtes pas à la hauteur" ;
+        $message = "Vous n'êtes pas à la hauteur" ;
     }
     elseif($note >4 && $note <=6) {
         $type_alert = "warning";
@@ -89,9 +89,12 @@ function checkUser(){
         $dataUser = getUsers($_POST['username']);
         $User = $dataUser->fetch();
             if($_POST['password'] === $User['Mdp']){
+                if (session_status() === PHP_SESSION_NONE){
+                    session_start();
+                }
                 $_SESSION['connected'] =1;           
             }else{
-                $erreur = 'coucou';
+                $erreur = 'Identifiants incorrects';
                 echo $erreur ;
             }                 
         $dataUser->closeCursor();        
@@ -116,7 +119,9 @@ function newArticleForm() {
 }
 function newArticleSave(){
     $fileName = getArticleFile();
-    $create = createArticles($_POST['title'], $_POST['text'], $_POST['author'], $fileName);
+    if(isset($_POST['title'])){
+        $create = createArticles($_POST['title'], $_POST['text'], $_POST['author'], $fileName);
+    }
 }
 function getArticleFile(){
     if(isset($_POST['submit'])){
@@ -131,7 +136,7 @@ function getArticleFile(){
 
         if(in_array($fileActualEXT, $extAllowed)){
             if($fileError === 0){
-                if($fileSize < 100000){
+                if($fileSize < 10000000){
                     $fileNameNew = uniqid('', true).".".$fileActualEXT;
                     $fileDestination = 'ressources/'.$fileNameNew;
                     move_uploaded_file($fileTmpName, $fileDestination);
