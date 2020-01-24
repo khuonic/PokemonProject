@@ -21,10 +21,11 @@ body{
 }
 video{
     height: 100vh;
-    width: 100%;  
+    width: 100%;
+    
 }
 #logo {
-    position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
@@ -34,33 +35,9 @@ main {
     padding-top:30px;
    flex : 1 0 auto;
 }
-<<<<<<< HEAD
-.navHome {
-    border-radius: 0px 0px 40px 40px;
-    background-color:rgba(255,255,255, 0.5);
-    -webkit-box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0);
-    font-family: 'Bangers', cursive;
-    width:46%;
-=======
-.backQuiz{
-    border:none;
-    background-color:rgba(255,255,255, 0.3);
-}
-footer{
- flex-shrink: 0 ;
- background-color:transparent;
- 
-}
-.links a {
-    color: black; 
-}
-.links a:hover {
-    text-decoration: none;
-}
-  .carousel-control {
+.carousel-control {
     display: none;
-  }
+}
 
 .carousel-inner h5{
     color:red;
@@ -70,43 +47,29 @@ footer{
     background-color:rgba(255,255,255, 0.3);
 }
 
-/* #slideshow1{
-    margin-left:16%;
-} */
 .nav a {
     color:white;
-    /* text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
-  */
-  
     font-size:22px;
     text-shadow:
    -1px -1px 0 #4074b5,  
     1px -1px 0 #4074b5,
     -1px 1px 0 #4074b5,
      1px 1px 0 #4074b5;
-
 }
 
 .nav a:hover {
-    /* -moz-transform: translate(0px, 8px);
--webkit-transform: translate(0px, 8px);
--o-transform: translate(0px, 8px);
--ms-transform: translate(0px, 8px);
-transform: translate(0px, 8px); */
--moz-transform: scale(1.3);
--webkit-transform: scale(1.3);
--o-transform: scale(1.3);
--ms-transform: scale(1.3);
-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
-
 .nav-link.active {
     -moz-transform: scale(1.3);
--webkit-transform: scale(1.3);
--o-transform: scale(1.3);
--ms-transform: scale(1.3);
-transform: scale(1.3);
->>>>>>> 3772d4bbaf900136b88b572b6569a4393be083ae
+    -webkit-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
 .nav-style{
     border-radius: 0px 0px 40px 40px;
@@ -119,35 +82,22 @@ transform: scale(1.3);
     width:46%;
     font-family: 'Bangers', cursive;
 }
-.nav a {
-    color:white;
-    font-size:22px;
-    text-shadow:
-        -1px -1px 0 #4074b5,  
-        1px -1px 0 #4074b5,
-        -1px 1px 0 #4074b5,
-        1px 1px 0 #4074b5;
-}
-.nav a:hover {
-    -moz-transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
-}
-.nav-link.active {
-    -moz-transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
+.navHome {
+    border-radius: 0px 0px 40px 40px;
+    background-color:rgba(255,255,255, 0.5);
+    -webkit-box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0);
+    font-family: 'Bangers', cursive;
+    width:46%;
 }
 #logoNav {
     width:120px;
 }
+
 #shadow{
     filter: drop-shadow(-1px 4px 3px rgba(50, 50, 0, 0.5));
 }
+
 #rec{
     position:relative;
     padding: 1px;
@@ -227,12 +177,7 @@ transform: scale(1.3);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
 }
-.carousel-control {
-    display: none;
-}
-.carousel-inner h5{
-    color:red;
-} 
+
 .carousel-indicators {
     position: absolute;
     top: 50%;
@@ -255,7 +200,6 @@ transform: scale(1.3);
     -ms-transform: scale(1.4);
     transform: scale(1.4); 
 }
-
 .carousel-indicators li img {
     display: block;
     width:100%;
@@ -268,9 +212,6 @@ transform: scale(1.3);
     -o-transform: scale(1.15);
     -ms-transform: scale(1.15);
     transform: scale(1.15);
-}
-.innerP{
-    background-color:rgba(255,255,255, 0.3);
 }
 .backQuiz{
     border:none;
@@ -290,7 +231,7 @@ transform: scale(1.3);
 }
 footer{
     flex-shrink: 0 ;
-    background-color:transparent;
+    background-color:transparent; 
 }
 .links a {
     color: black; 
@@ -298,19 +239,18 @@ footer{
 .links a:hover {
     text-decoration: none;
 }
-@media screen and (max-width:1330px) {
-    .nav-style, .navHome{
-        display:flex;
-         border:none;
-         width:60%;           
-    }
- }
 @media screen and (max-width:1300px) {
     video {
         height:100%;
     }
 }
-
+@media screen and (max-width:1330px) {
+    .nav-style, .navHome{
+        display:flex;
+         border:none;
+         width:62%;           
+    }
+}
 @media screen and (max-width:990px) {
    .nav-style , .navHome{
        display:flex;
@@ -319,7 +259,7 @@ footer{
         margin-left:3px;        
    }
    .carousel-indicators {
-    transform: translate(-80%,-50%) !important;
+    transform: translate(-80%,-50%) !important
     }
     #logoNav{
         width:70px;
@@ -347,10 +287,10 @@ footer{
     }
     #rec{
         -moz-transform: scale(0.7);
-        -webkit-transform: scale(0.7);
-        -o-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-        transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
     }
     #rec:hover{
         cursor:pointer;
@@ -367,55 +307,4 @@ footer{
         -ms-transform: scale(0.5);
         transform: scale(0.5);
     }
-<<<<<<< HEAD
  }
-=======
- }
-@media screen and (max-width:650px) {
-    #logo{
-        width:80%;
-    }
-}
-
-
-.carousel-indicators {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width:100%;
-}
-
-.carousel-indicators li {
-    background-color: transparent;
-    height: auto;
-    width: 50%;;
-    opacity: inherit;
-}
-.carousel-indicators li img {
-    display: block;
-    width:100%;
-    background-color:rgba(255,255,255, 0.3);
-border-radius:30%;
-}
-.carousel-indicators li img:hover {
-    -moz-transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
-}
-
-#satoshi-div{
-    display:block;
-    width:800px;
-    height: auto;
-}
-
-#satoshi{
-    display: block;
-    width:15rem;
-    height: auto;
-}
-
->>>>>>> 3772d4bbaf900136b88b572b6569a4393be083ae
