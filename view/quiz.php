@@ -14,11 +14,10 @@ ini_set('display_errors', 1);
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-8 text-center">
-            <div class="card " style=" border:none;
-    background-color:rgba(255,255,255, 0.3);">
+            <div class="card " style=" border:none;background-color:rgba(255,255,255, 0.3);">
                 <div class="card-body " >
                     <form method ="post" action="index.php?action=quizResult" enctype="multipart/form-data" name ="radioForm" >
-        <?php while ($dataQ = $questions->fetch(PDO::FETCH_ASSOC)){?>
+                        <?php while ($dataQ = $questions->fetch(PDO::FETCH_ASSOC)){?>
                             <fieldset class="form-group">
                                 <div class="row">
                                         <legend class="col-form-label col-sm-12 mb-2">
@@ -26,13 +25,11 @@ ini_set('display_errors', 1);
                                     </legend>
                                 </div>
                             </fieldset>
-                            <?php $answers = quizMatchAnswers($dataQ['id']);
-                            ?>
-                            
+                            <?php $answers = quizMatchAnswers($dataQ['id']); ?>
                             <?php 
                                 $note = 0 ;
-                            while($dataA = $answers->fetch(PDO::FETCH_ASSOC)){                       
-                                if($dataA["question_id"] == $dataQ['id']){
+                                while($dataA = $answers->fetch(PDO::FETCH_ASSOC)){                       
+                                    if($dataA["question_id"] == $dataQ['id']){
                             ?>
                             <div class="col-sm-12">
                                 <div class="form-group">
@@ -42,18 +39,19 @@ ini_set('display_errors', 1);
                             </div>
 
 
-<?php        
-    }  
-}
-
-$answers->closeCursor();
-?>
-<?php
-}
-$questions->closeCursor();
-    ?>
+                            <?php        
+                                }  
+                            }
+                            $answers->closeCursor();
+                            ?>
+                        <?php
+                        }
+                        $questions->closeCursor();
+                        ?>
                         <div id="alert" ></div>
-                        <button type="submit" class="btn btn-primary" name="save" onclick =" return isChecked()">Valider</button>
+                        <button type="submit" class="valider" name="save" onclick =" return isChecked()">
+                            <img src="ressources/validerA.png" alt="valider"
+                        ></button>
                     </form>
                 </div>
             </div>

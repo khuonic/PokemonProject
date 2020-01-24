@@ -5,39 +5,37 @@ ini_set('display_errors', 1);
 ?>
 
     <div class="containder-fluid mt-5" style="overflow: hidden;">
-            <div class="col-2">
-                
-                <ol class="carousel-indicators row text-center">
-                    <h3 class="col-12">Générations</h3>
-                    <li class="carouselButton " data-target="#slideshow1" data-slide-to="0" class="col-12" onclick="$('#slideshow2').carousel(0)">
-                        <img src="ressources/Générations/rougebleu.png" >
-                    </li>
-                    <li class="carouselButton" data-target="#slideshow1" data-slide-to="1" class="col-12" onclick="$('#slideshow2').carousel(1)"> 
-                        <img src="ressources/Générations/orargent.png">
-                    </li>
-                    <li class="carouselButton" data-target="#slideshow1" data-slide-to="2" class="col-12" onclick="$('#slideshow2').carousel(2)"> 
-                        <img src="ressources/Générations/rubissaphir.png">
-                    </li>
-                    <li class="carouselButton" data-target="#slideshow1" data-slide-to="3" class="col-12" onclick="$('#slideshow2').carousel(3)">
-                        <img src="ressources/Générations/diamantperle.png">
-                    </li>
-                    <li class="carouselButton" data-target="#slideshow1" data-slide-to="4" class="col-12" onclick="$('#slideshow2').carousel(4)"> 
-                        <img src="ressources/Générations/noireblanche.png">
-                    </li>
-                    <li class="carouselButton" data-target="#slideshow1" data-slide-to="5" class="col-12" onclick="$('#slideshow2').carousel(5)"> 
-                        <img src="ressources/Générations/xy.png">
-                    </li>
-                    <li class="carouselButton" data-target="#slideshow1" data-slide-to="6" class="col-12" onclick="$('#slideshow2').carousel(6)"> 
-                        <img src="ressources/Générations/soleillune.png">
-                    </li>
-                    <li class="carouselButton" data-target="#slideshow1" data-slide-to="7" class="col-12" onclick="$('#slideshow2').carousel(7)"> 
-                        <img src="ressources/Générations/epeebouclier.png">
-                    </li>
-                </ol>
-            </div>
+        <div class="col-sm-3 col-md-3 col-lg-2 ">
+            <ol class="carousel-indicators row text-center coucou">
+                <img class="col-8 mb-1" src="ressources/Générations/panneau.png" > 
+                <li class="carouselButton activeButton" id="li1" data-target="#slideshow1" data-slide-to="0" data-toggle="list" class="col-12" onclick="callToActiveSlide(0,li1)">
+                    <img src="ressources/Générations/rougebleu.png" >
+                </li>
+                <li class="carouselButton" id="li2" data-target="#slideshow1" data-slide-to="1" data-toggle="list"  class="col-12" onclick="callToActiveSlide(1,li2)"> 
+                    <img src="ressources/Générations/orargent.png">
+                </li>
+                <li class="carouselButton"  id="li3" data-target="#slideshow1" data-slide-to="2" data-toggle="list" class="col-12" onclick="callToActiveSlide(2,li3)"> 
+                    <img src="ressources/Générations/rubissaphir.png">
+                </li>
+                <li class="carouselButton"  id="li4" data-target="#slideshow1" data-slide-to="3" data-toggle="list" class="col-12" onclick="callToActiveSlide(3,li4)">
+                    <img src="ressources/Générations/diamantperle.png">
+                </li>
+                <li class="carouselButton"  id="li5" data-target="#slideshow1" data-slide-to="4" data-toggle="list" class="col-12" onclick="callToActiveSlide(4,li5)"> 
+                    <img src="ressources/Générations/noireblanche.png">
+                </li>
+                <li class="carouselButton"  id="li6" data-target="#slideshow1" data-slide-to="5" data-toggle="list" class="col-12" onclick="callToActiveSlide(5,li6)"> 
+                    <img src="ressources/Générations/xy.png">
+                </li>
+                <li class="carouselButton"  id="li7" data-target="#slideshow1" data-slide-to="6" data-toggle="list" class="col-12" onclick="callToActiveSlide(6,li7)"> 
+                    <img src="ressources/Générations/soleillune.png">
+                </li>
+                <li class="carouselButton"  id="li8" data-target="#slideshow1" data-slide-to="7" data-toggle="list" class="col-12" onclick="callToActiveSlide(7,li8)"> 
+                    <img src="ressources/Générations/epeebouclier.png">
+                </li>
+            </ol>
+        </div>
         <div class="row ">
-            <div  id="slideshow1" class=" col-md-6 col-lg-6  col-sm-8 carousel container " data-interval="false">
-               
+            <div  id="slideshow1" class=" col-md-7 col-lg-6  col-sm-8 carousel container " data-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="ressources/Générations/rouge-bleu.png" class="d-block w-100 magictime spaceInDown" alt=" version rouge-bleu" >
@@ -62,7 +60,6 @@ ini_set('display_errors', 1);
                     </div>
                     <div class="carousel-item">
                         <img src="ressources/Générations/epee-bouclier-2.png" class="d-block w-100 magictime spaceInDown" alt="version épée-bouclier">
-
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#slideshow1" role="button" data-slide="prev" onclick="$('#slideshow2').carousel('prev')">
@@ -74,7 +71,7 @@ ini_set('display_errors', 1);
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div id="slideshow2" class=" col-md-7 col-lg-7  col-sm-8 carousel  container mt-5 " data-interval="false">
+            <div id="slideshow2" class=" col-md-8 col-lg-7  col-sm-8 carousel  container mt-5 mb-5" data-interval="false">
                 <div class="carousel-inner innerP">
                     <div class="carousel-item active text-center magictime spaceInDown">                       
                         <h5>Pokemon 1ère Génération</h5>
@@ -337,12 +334,8 @@ ini_set('display_errors', 1);
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </div>  
     </div>
-
-
-
 
 <?php $content = ob_get_clean(); ?>
 

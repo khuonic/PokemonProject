@@ -15,10 +15,13 @@ ini_set('display_errors', 1);
                     <div class="form-group  ">
                         <label for="formGroupExampleInput">Réponse 1 : Réponse Vraie</label>
                         <input type="text" class="form-control"  name="answer[]" required>
+
                         <label for="formGroupExampleInput">Réponse 2 :</label>
                         <input type="text" class="form-control"  name="answer[]" required>
+
                         <label for="formGroupExampleInput">Réponse 3 : </label>
                         <input type="text" class="form-control"  name="answer[]" required>
+                        
                         <input type="number" name="idQuestion" value="<?= $lastId; ?>" style='display:none;'>
                     </div>
                     <div class="form-group col-12">
