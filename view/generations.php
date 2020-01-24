@@ -9,28 +9,28 @@ ini_set('display_errors', 1);
             <ol class="carousel-indicators row text-center coucou">
                 <img class="col-8 mb-1" src="ressources/Générations/panneau.png" > 
                 <li class="carouselButton activeButton" id="li1" data-target="#slideshow1" data-slide-to="0" data-toggle="list" class="col-12" onclick="callToActiveSlide(0,li1)">
-                    <img src="ressources/Générations/rougebleu.png" >
+                    <img src="ressources/Générations/rougebleu2.png" >
                 </li>
                 <li class="carouselButton" id="li2" data-target="#slideshow1" data-slide-to="1" data-toggle="list"  class="col-12" onclick="callToActiveSlide(1,li2)"> 
-                    <img src="ressources/Générations/orargent.png">
+                    <img src="ressources/Générations/orargent2.png">
                 </li>
                 <li class="carouselButton"  id="li3" data-target="#slideshow1" data-slide-to="2" data-toggle="list" class="col-12" onclick="callToActiveSlide(2,li3)"> 
-                    <img src="ressources/Générations/rubissaphir.png">
+                    <img src="ressources/Générations/rubissaphir2.png">
                 </li>
                 <li class="carouselButton"  id="li4" data-target="#slideshow1" data-slide-to="3" data-toggle="list" class="col-12" onclick="callToActiveSlide(3,li4)">
-                    <img src="ressources/Générations/diamantperle.png">
+                    <img src="ressources/Générations/diamantperle2.png">
                 </li>
                 <li class="carouselButton"  id="li5" data-target="#slideshow1" data-slide-to="4" data-toggle="list" class="col-12" onclick="callToActiveSlide(4,li5)"> 
-                    <img src="ressources/Générations/noireblanche.png">
+                    <img src="ressources/Générations/noireblanche2.png">
                 </li>
                 <li class="carouselButton"  id="li6" data-target="#slideshow1" data-slide-to="5" data-toggle="list" class="col-12" onclick="callToActiveSlide(5,li6)"> 
-                    <img src="ressources/Générations/xy.png">
+                    <img src="ressources/Générations/xy2.png">
                 </li>
                 <li class="carouselButton"  id="li7" data-target="#slideshow1" data-slide-to="6" data-toggle="list" class="col-12" onclick="callToActiveSlide(6,li7)"> 
-                    <img src="ressources/Générations/soleillune.png">
+                    <img src="ressources/Générations/soleillune2.png">
                 </li>
                 <li class="carouselButton"  id="li8" data-target="#slideshow1" data-slide-to="7" data-toggle="list" class="col-12" onclick="callToActiveSlide(7,li8)"> 
-                    <img src="ressources/Générations/epeebouclier.png">
+                    <img src="ressources/Générations/epeebouclier2.png">
                 </li>
             </ol>
         </div>
@@ -38,28 +38,28 @@ ini_set('display_errors', 1);
             <div  id="slideshow1" class=" col-md-7 col-lg-6  col-sm-8 carousel container " data-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="ressources/Générations/rouge-bleu.png" class="d-block w-100 magictime spaceInDown" alt=" version rouge-bleu" >
+                        <img src="ressources/Générations/rouge-bleu.gif" class="d-block w-100 magictime spaceInDown" alt=" version rouge-bleu" >
                     </div>
                     <div class="carousel-item">
-                        <img src="ressources/Générations/or-argent.png" class="d-block w-100 magictime spaceInDown" alt="version or-argent">
+                        <img src="ressources/Générations/or-argent.gif" class="d-block w-100 magictime spaceInDown" alt="version or-argent">
                     </div>
                     <div class="carousel-item">
-                        <img src="ressources/Générations/rubis-saphir.png" class="d-block w-100 magictime spaceInDown" alt="version rubis-saphir">
+                        <img src="ressources/Générations/rubis-saphir.gif" class="d-block w-100 magictime spaceInDown" alt="version rubis-saphir">
                     </div>
                     <div class="carousel-item">
-                        <img src="ressources/Générations/diamant-perle.png" class="d-block w-100 magictime spaceInDown" alt="version diamant-perle">
+                        <img src="ressources/Générations/diamant-perle.gif" class="d-block w-100 magictime spaceInDown" alt="version diamant-perle">
                     </div>
                     <div class="carousel-item">
-                        <img src="ressources/Générations/noire-blanche.png" class="d-block w-100 magictime spaceInDown" alt="version noire-blanche">
+                        <img src="ressources/Générations/noire-blanche.gif" class="d-block w-100 magictime spaceInDown" alt="version noire-blanche">
                     </div>
                     <div class="carousel-item">
-                        <img src="ressources/Générations/x-y.png" class="d-block w-100 magictime spaceInDown" alt="version x-y">
+                        <img src="ressources/Générations/x-y.gif" class="d-block w-100 magictime spaceInDown" alt="version x-y">
                     </div>
                     <div class="carousel-item">
-                        <img src="ressources/Générations/soleil-lune.png" class="d-block w-100 magictime spaceInDown" alt="version soleil-lune">
+                        <img src="ressources/Générations/soleil-lune.gif" class="d-block w-100 magictime spaceInDown" alt="version soleil-lune">
                     </div>
                     <div class="carousel-item">
-                        <img src="ressources/Générations/epee-bouclier-2.png" class="d-block w-100 magictime spaceInDown" alt="version épée-bouclier">
+                        <img src="ressources/Générations/epee-bouclier-2.gif" class="d-block w-100 magictime spaceInDown" alt="version épée-bouclier">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#slideshow1" role="button" data-slide="prev" onclick="$('#slideshow2').carousel('prev')">
@@ -81,6 +81,12 @@ ini_set('display_errors', 1);
                         <h6><u><b>Liste des protagonistes principaux : </b></u></h6>   
                         <br>  
                         <div class="imagesContenuGenerations row">
+                        <div class="rivaux col-4">
+                                <img src="ressources/Générations/red.gif" alt ="rival régis" style="width:20%;"> 
+                                <br>
+                                <br>
+                                <text class="col-3">Red, personnage incarné par le joueur.</text>
+                            </div> 
                             <div class="rivaux col-4">
                                 <img src="ressources/Générations/rivalrb.png" alt ="rival régis" style="width:20%;"> 
                                 <br>
@@ -93,9 +99,9 @@ ini_set('display_errors', 1);
                                 <br>
                                 <text class="col-3">Le professeur Chen accueillant le joueur dans Pokémon Rouge et Bleu.</text>
                             </div>
-                            <div class="team col-4">
-                                <img src="ressources/Générations/teamrocketrb.png" alt ="rival régis" style="width:40%;"> 
-                                <br>
+                            <div class="team col-12">
+                                <img src="ressources/Générations/teamrocketrb.png" alt ="rival régis" style="width:10%;"> 
+                                
                                 <br>
                                 <text class="col-3">Sbire de la Team Rocket, ennemis principaux du joueur </text>
                             </div>                     
@@ -115,7 +121,7 @@ ini_set('display_errors', 1);
                                 <text class="col-3">Silver, rival du joueur dans la premiere génération</text>
                             </div> 
                             <div class="prof col-4">
-                                <img src="ressources/Générations/Professeur_Orme.png" alt ="Professeur Chen" style="width:20%;"> 
+                                <img src="ressources/Générations/Professeur_Orme2.png" alt ="Professeur Chen" style="width:20%;"> 
                                 <br>
                                 <br>
                                 <text class="col-3">Le professeur Orme, ancien élève du professeur Chen,il remet au dresseur son premier pokémon.</text>
@@ -253,14 +259,14 @@ ini_set('display_errors', 1);
                                 <text class="col-3">Le Professeur Platane, le Professeur Pokémon de la région de Kalos. Il donne au joueur un Pokémon de départ de la région de Kanto.</text>
                             </div>
                             <div class="team col-4">
-                                <img src="ressources/Générations/rivalxy.png" alt ="rival régis" style="width:50%;"> 
+                                <img src="ressources/Générations/rivalxy.gif" alt ="rival régis" style="width:50%;"> 
                                 
                                 <br>
                                 <text class="col-3">Sannah, Trovato, Tierno, et Serena ou Kalem (suivant celui incarné) sont les nouveaux amis et rivaux du joueur dans Pokémon X et Y.  </text>
                             </div> 
 
                             <div class="rivaux col-12 mt-4">
-                                <img src="ressources/Générations/teamFlare.png" alt ="rival régis" style="width:10%;">
+                                <img src="ressources/Générations/teamFlare2.png" alt ="rival régis" style="width:10%;">
                                 <br>
                                 <text class="col-3">Sbires de la Team Flare, organisation malfaisante de cette génération.</text>
                             </div>                     
@@ -278,13 +284,13 @@ ini_set('display_errors', 1);
                                 <text class="col-4">Soleil et Lune sont les personnages que le joueur peut choisir d'incarner. Le fait de jouer l'un ou l'autre fait disparaître son alter-ego de l'histoire.</text>
                             </div> 
                             <div class="prof col-4">
-                                <img src="ressources/Générations/euphorbe.png" alt ="Professeur Chen" style="width:50%;"> 
+                                <img src="ressources/Générations/euphorbe.gif" alt ="Professeur Chen" style="width:50%;"> 
                                 <br>
                                 <text class="col-3">Professeur Euphorbe est le Professeur Pokémon d'Alola et le fondateur de la Ligue Pokémon de la région. C'est lui qui accueille le joueur à son arrivée dans la région.</text>
                             </div>
                             <div class="team col-4">
-                                <img src="ressources/Générations/Tili.png" alt ="rival régis" style="width:45%;"> 
-                                <img src="ressources/Générations/Gladio.png" alt ="rival régis" style="width:45%;"> 
+                                <img src="ressources/Générations/Tili.gif" alt ="rival régis" style="width:18%;"> 
+                                <img src="ressources/Générations/Gladio.gif" alt ="rival régis" style="width:45%;"> 
                                 <br>
                                 <text class="col-3">Le rival est un garçon qui se prénomme Tili. Il choisit le Pokémon ayant un type désavantagé par rapport à celui du joueur.  </text>
                             </div> 
@@ -309,23 +315,23 @@ ini_set('display_errors', 1);
                         <br>
                         <div class="imagesContenuGenerations row">
                             <div class="rivaux col-4">
-                                <img src="ressources/Générations/gloriaviktor.png" alt ="rival régis" style="width:50%;">
+                                <img src="ressources/Générations/gloriaviktor2.png" alt ="rival régis" style="width:50%;">
 
                               <br>
                                 <text class="col-4">Viktor et Gloria sont les personnages que le joueur peut choisir d'incarner. Le  personnage incarné possède au début de son aventure l'un des trois Pokémon de départ de la région de Galar, à savoir Ouistempo , Flambino ou Larméléon.</text>
                             </div> 
                             <div class="prof col-4">
-                                <img src="ressources/Générations/magnolia.png" alt ="Professeur Chen" style="width:40%;"> 
+                                <img src="ressources/Générations/magnolia2.png" alt ="Professeur Chen" style="width:40%;"> 
                                 <br>
                                 <text class="col-3">Magnolia est la Professeure Pokémon de la région de Galar. Ses recherches portent principalement sur le phénomène Dynamax.Le joueur la rencontre pour la première fois sur les conseils de Tarak pour lui demander une Lettre de Recommandation. </text>
                             </div>
                             <div class="team col-4">
-                                <img src="ressources/Générations/rivalsshields.png" alt ="rival régis" style="width:80%;"> 
+                                <img src="ressources/Générations/rivalsshields2.png" alt ="rival régis" style="width:80%;"> 
                                 <br>
                                 <text class="col-3">Le premier rival est un garçon appelé Nabil, voisin et ami du héros, qui débute son aventure en même temps que lui. Le second est un garçon nommé Travis, un génie des combats Pokémon. Enfin, la dernière rivale est Rosemary, une fille très intelligente et stratège. 
                             </div>
                             <div class="rivaux col-12 mt-4">
-                                <img src="ressources/Générations/YELL.png" alt ="rival régis" style="width:20%;">
+                                <img src="ressources/Générations/YELL2.png" alt ="rival régis" style="width:15%;">
                                 <br>
                                 <text class="col-3">Sbires de la Team Yell, organisation active dans la région de Galar.
                                 </text>

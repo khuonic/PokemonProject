@@ -13,7 +13,7 @@ body{
     color:black;
 }
 #body-template{
-    background-image: url('../ressources/background2.png') ;
+    background-image: url('../ressources/background2.jpg') ;
     background-attachment: fixed;
     background-position: center;
     background-size:cover;

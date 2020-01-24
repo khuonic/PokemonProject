@@ -34,7 +34,7 @@
                         <?php $page = $_SERVER['PHP_SELF']; ?>
                         <li  class="nav-item">
                             <a <?php if( strpos($_SERVER['REQUEST_URI'],'/index.php?home') ){ echo 'class=" nav-link active"'; } ?> href="index.php?home" class="nav-link">
-                            <img src="ressources/pokedex5.png" alt="logoNav"  id="logoNav">
+                            <img src="ressources/pokédex6.png" alt="logoNav"  id="logoNav">
                             </a>
                         </li>
                         <li  class="nav-item">
