@@ -91,9 +91,6 @@ transform: translate(0px, 8px); */
 -ms-transform: scale(1.3);
 transform: scale(1.3);
 }
-.nav a:active {
-
-}
 
 .nav-link.active {
     -moz-transform: scale(1.3);
@@ -129,13 +126,6 @@ box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0);
 #shadow{
     filter: drop-shadow(-1px 4px 3px rgba(50, 50, 0, 0.5));
 }
-/* #pokdex-container{
-    width:20px;
-    position:absolute;
-}
-#pokedex{
-    width:100%;
-} */
 #rec{
     position:relative;
     padding: 1px;
@@ -314,7 +304,15 @@ border-radius:30%;
     transform: scale(1.3);
 }
 
-.activeButton {
-    
+#satoshi-div{
+    display:block;
+    width:800px;
+    height: auto;
+}
+
+#satoshi{
+    display: block;
+    width:15rem;
+    height: auto;
 }
 
