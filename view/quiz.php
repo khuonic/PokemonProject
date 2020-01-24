@@ -26,7 +26,9 @@ ini_set('display_errors', 1);
                                     </legend>
                                 </div>
                             </fieldset>
-                            <?php $answers = quizMatchAnswers($dataQ['id']);?>
+                            <?php $answers = quizMatchAnswers($dataQ['id']);
+                            ?>
+                            
                             <?php 
                                 $note = 0 ;
                             while($dataA = $answers->fetch(PDO::FETCH_ASSOC)){                       

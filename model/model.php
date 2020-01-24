@@ -14,10 +14,17 @@ function dbConnect(){
     }
 }
 
-function getArticle(){
+function getArticle($maxArticle, $offset){
     $db = dbConnect();
 
-    $req = $db->query('SELECT id, Title, Articles, Picture FROM Article ORDER BY RAND()');
+    $req = $db->query("SELECT id, Title, Articles, Picture FROM Article ORDER BY RAND() LIMIT $maxArticle OFFSET $offset");
+    return $req;
+}
+
+function getPaging(){
+    $db = dbConnect();
+
+    $req = $db->query('SELECT COUNT(id) FROM Article');
     return $req;
 }
 

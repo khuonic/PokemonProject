@@ -27,18 +27,23 @@ while ($data = $articles->fetch()){
 <?php
 }
 $articles->closeCursor();
-
 ?>
 <?php 
-if(is_connected()){ ?>
+if(is_connected()): ?>
     <div class="row justify-content-center">
         <a href="index.php?newArticle" class="btn btn-info">Add</a>
     </div>
     
-<?php }
-?>
+<?php endif?>
 
-
+<div class = "d-flex justify-content-center my-4">
+    <?php if($_GET['pop-culture'] > 1):?>
+        <a href="index.php?pop-culture=<?= $_GET['pop-culture'] - 1?>" class="btn btn-primary mr-3">&laquo; Page Précédente</a>
+    <?php endif?>
+    <?php if($_GET['pop-culture'] < $returnData[2]):?>
+        <a href="index.php?pop-culture=<?= $_GET['pop-culture'] + 1?>" class="btn btn-primary ml-3">Page Suivante &raquo;</a>
+    <?php endif?>
+</div>
 
 
 <?php $content = ob_get_clean(); ?>

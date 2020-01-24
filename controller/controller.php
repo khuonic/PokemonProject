@@ -30,10 +30,77 @@ function mangas() {
     require('view/mangas.php');
 }
 
+function paginArticles(){
 
+    $currentPage =($_GET['pop-culture'] ?? 1) ?: 1;
+    if($_GET['pop-culture'] === 0 || $_GET['pop-culture'] === ''){
+        (int)$_GET['pop-culture'] = 1;
+   }
+   if(!filter_var($currentPage, FILTER_VALIDATE_INT)){
+    throw new Exception('Numéro de page invalide');
+}
+    
+    if($currentPage <= 0){
+        throw new Exception('Numéro de page invalide');
+    }
+
+    $paging = getPaging();
+    $maxArticle = 2;
+    $count = $paging->fetch(PDO::FETCH_NUM);
+    $pages = ceil($count[0]/$maxArticle);
+    if($currentPage > $pages){
+        throw new Exception("Cette page n'existe pase");
+    }
+    $offset = $maxArticle * ($currentPage - 1);
+    $returnData = array($maxArticle, $offset, $pages);
+    return $returnData;
+}
 function popCulture () {
-    $articles = getArticle();
+    $returnData = paginArticles();
+    $articles = getArticle($returnData[0], $returnData[1]);
     require('view/pop-culture.php');
+    return $returnData;
+}
+
+function newArticleForm() {
+    require('view/newArticle.php');
+}
+
+function newArticleSave(){
+    $fileName = getArticleFile();
+    if(isset($_POST['title'])){
+        $create = createArticles($_POST['title'], $_POST['text'], $_POST['author'], $fileName);
+    }
+}
+function getArticleFile(){
+    if(isset($_POST['submit'])){
+        $fileName = $_FILES['userfile']['name'];
+        $fileSize = $_FILES['userfile']['size'];
+        $fileError = $_FILES['userfile']['error'];
+        $fileTmpName = $_FILES['userfile']['tmp_name'];
+
+        $fileEXT = explode('.', $fileName);
+        $fileActualEXT = strtolower(end($fileEXT));
+        $extAllowed = array('jpg', 'jpeg', 'png', 'pdf');
+
+        if(in_array($fileActualEXT, $extAllowed)){
+            if($fileError === 0){
+                if($fileSize < 10000000){
+                    $fileNameNew = uniqid('', true).".".$fileActualEXT;
+                    $fileDestination = 'ressources/'.$fileNameNew;
+                    move_uploaded_file($fileTmpName, $fileDestination);
+                    return $fileNameNew;
+                }else{
+                    echo "L'image est trop lourde.";
+                }
+            }else{
+                echo "Il y a eu une erreur lors de l'enregistrement de l'image.";
+            }
+        }else{
+            echo "Ce type d'image n'est pas autorisé.";
+        }
+
+    }
 }
 
 
@@ -114,45 +181,7 @@ function logout(){
     header('location:index.php?home');  
 }
 
-function newArticleForm() {
-    require('view/newArticle.php');
-}
-function newArticleSave(){
-    $fileName = getArticleFile();
-    if(isset($_POST['title'])){
-        $create = createArticles($_POST['title'], $_POST['text'], $_POST['author'], $fileName);
-    }
-}
-function getArticleFile(){
-    if(isset($_POST['submit'])){
-        $fileName = $_FILES['userfile']['name'];
-        $fileSize = $_FILES['userfile']['size'];
-        $fileError = $_FILES['userfile']['error'];
-        $fileTmpName = $_FILES['userfile']['tmp_name'];
 
-        $fileEXT = explode('.', $fileName);
-        $fileActualEXT = strtolower(end($fileEXT));
-        $extAllowed = array('jpg', 'jpeg', 'png', 'pdf');
-
-        if(in_array($fileActualEXT, $extAllowed)){
-            if($fileError === 0){
-                if($fileSize < 10000000){
-                    $fileNameNew = uniqid('', true).".".$fileActualEXT;
-                    $fileDestination = 'ressources/'.$fileNameNew;
-                    move_uploaded_file($fileTmpName, $fileDestination);
-                    return $fileNameNew;
-                }else{
-                    echo "L'image est trop lourde.";
-                }
-            }else{
-                echo "Il y a eu une erreur lors de l'enregistrement de l'image.";
-            }
-        }else{
-            echo "Ce type d'image n'est pas autorisé.";
-        }
-
-    }
-}
 
 
 function newQuestions() {
