@@ -14,10 +14,10 @@ while ($data = $articles->fetch()){
             <img class="card-img-top" src="ressources/<?= htmlspecialchars($data['Picture'])?>" alt="Card image cap">
                 <div class="card-body">
                     <h3>
-                        <?= htmlspecialchars($data['Title']); ?>
+                        <?= htmlspecialchars(utf8_encode($data['Title'])); ?>
                     </h3>
                     <p class="card-text">
-                    <?= htmlspecialchars($data['Articles']);?>
+                    <?= htmlspecialchars(utf8_encode($data['Articles']));?>
                     </p>
                 </div>
             </div>
@@ -27,7 +27,7 @@ while ($data = $articles->fetch()){
 <?php
 }
 $articles->closeCursor();
-var_dump($_FILES['userfile']['error']);
+
 ?>
 <?php 
 if(is_connected()){ ?>

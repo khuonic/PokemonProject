@@ -22,7 +22,7 @@ ini_set('display_errors', 1);
                             <fieldset class="form-group">
                                 <div class="row">
                                         <legend class="col-form-label col-sm-12 mb-2">
-                                        <h5><?= htmlspecialchars($dataQ['Question']); ?></h5>
+                                        <h5><?= htmlspecialchars(utf8_encode($dataQ['Question'])); ?></h5>
                                     </legend>
                                 </div>
                             </fieldset>
@@ -35,7 +35,7 @@ ini_set('display_errors', 1);
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <input type="radio" name="<?= $dataQ['id']?>" value="<?= $dataA['correct']?>" id="<?= $dataA['id_answer']?>"  style="cursor:pointer;" class="radio">
-                                    <label for="<?= $dataA['id_answer']?>" style="cursor:pointer;"><?= htmlspecialchars($dataA['answer']);?> </label>   
+                                    <label for="<?= $dataA['id_answer']?>" style="cursor:pointer;"><?= htmlspecialchars(utf8_encode($dataA['answer']));?> </label>   
                                 </div>
                             </div>
 

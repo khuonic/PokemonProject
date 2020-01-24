@@ -73,4 +73,9 @@ $('.btnCarouselNext').on('click', function(e) {
     $('.carousel').carousel('prev')
   })
 
+//   $(document).ready(function() {
+//     $('.carouselButton').click(function() {
+//         $('.carouselButton').toggleClass('activeButton');
 
+//     })
+// })

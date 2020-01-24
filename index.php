@@ -11,15 +11,6 @@ elseif(isset($_GET['home'])){
 elseif(isset($_GET['Generations'])){
     generations();
 }
-elseif(isset($_GET['series_et_films'])){
-    seriesAndFilms();
-}
-elseif(isset($_GET['cartes'])){
-    cards();
-}
-elseif(isset($_GET['mangas'])){
-    mangas();
-}
 elseif(isset($_GET['pop-culture'])){
     popCulture();
 }
