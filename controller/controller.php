@@ -144,28 +144,28 @@ function quizResult() {
     echo $note . "/8<br><br /><br />";
     if($note <= 2) {
         $type_alert = "danger";
-        $message = "Retournez vous entraîner dans les hautes herbes" ;
+        $message = '<img src="ressources/ResultatQuizz1.png" alt="resultat" class="col-lg-8 col-md-8 col-sm-9 col-12"/>' ;
     }
 
     elseif($note >2 && $note <=4) {
         $type_alert = "danger";
-        $message = "Vous n'êtes pas à la hauteur" ;
+        $message = '<img src="ressources/ResultatQuizz2.png" alt="resultat" class="col-lg-8 col-md-8 col-sm-9 col-12"/>' ;
     }
     elseif($note >4 && $note <=6) {
         $type_alert = "warning";
-        $message = "Vous pouvez mieux faire ! ";
+        $message = '<img src="ressources/ResultatQuizz3.png" alt="resultat" class="col-lg-8 col-md-8 col-sm-9 col-12"/>';
         
     }
     elseif($note >6 && $note <8) {
         $type_alert = "success";
-        $message = "Encore un petit effort pour être le meilleur ! " ;
+        $message = '<img src="ressources/ResultatQuizz4.png" alt="resultat" class="col-lg-8 col-md-8 col-sm-9 col-12"/>' ;
        
     }
     elseif($note == 8) {
         $type_alert = "success";
-        $message = "Vous êtes le meilleur dresseur !" ;
+        $message = '<img src="ressources/ResultatQuizz5.png" alt="resultat" class="col-lg-8 col-md-8 col-sm-9 col-12"/>' ;
     }
-    echo "<span class='alert alert-{$type_alert}'> $message</span><br /><br />";
+    echo " $message";
 }
 function quizAnswer() {
     require('view/quizAnswer.php');

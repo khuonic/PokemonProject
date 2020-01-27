@@ -229,6 +229,7 @@ main {
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
+
 footer{
     flex-shrink: 0 ;
     background-color:transparent; 
@@ -273,18 +274,30 @@ footer{
 }
 
 @media screen and (max-width:650px) {
+    .nav-style , .navHome{
+        width:25%;
+    }
     #logo{
         width:80%;
     }
 }
+@media screen and (max-width:575px) {
+    .carouselButtons{
+        display:none;
+    }
+}
 @media screen and (max-width:450px) {
+    /* .nav-style , .navHome{
+        width:30%;
+    } */
     .nav-style a, .navHome a{
         width:22%; 
-      font-size: 11px;    
+      font-size: 12px;    
     }
     .navUl{
         padding-left:10px;
     }
+  
     #rec{
         -moz-transform: scale(0.7);
     -webkit-transform: scale(0.7);

@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 ?>
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-8 text-center mb-4 mt-4">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-12 text-center mb-4 mt-4">
             <h2>Testez vos connaissances de dresseur !</h2>
         </div>
     </div>
@@ -13,7 +13,7 @@ ini_set('display_errors', 1);
 
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-8 text-center">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-12 text-center">
             <div class="card " style=" border:none;background-color:rgba(255,255,255, 0.3);">
                 <div class="card-body " >
                     <form method ="post" action="index.php?action=quizResult" enctype="multipart/form-data" name ="radioForm" >
@@ -50,8 +50,8 @@ ini_set('display_errors', 1);
                         ?>
                         <div id="alert" ></div>
                         <button type="submit" class="valider" name="save" onclick =" return isChecked()">
-                            <img src="ressources/validerA.png" alt="valider"
-                        ></button>
+                            <img src="ressources/validerA.png" alt="valider">
+                        </button>
                     </form>
                 </div>
             </div>
