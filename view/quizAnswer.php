@@ -7,10 +7,10 @@ ini_set('display_errors', 1);
 
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-8 text-center mb-4 mt-4">
+        <div class="col-lg-6 col-md-8 col-sm-12 col-12 text-center mb-4 mt-4">
             <?php quizResult();?>
             <br>
-            <a href="index.php?quiz"><button class ="btn btn-primary">Retentez votre chance !</button></a>
+            <a href="index.php?quiz"><button class ="mt-4 valider"><img src="ressources/rejouer.png" alt="rejouer"></button></a>
         </div>
     </div>
 </div>

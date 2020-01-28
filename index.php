@@ -1,8 +1,8 @@
 <?php
 require('controller/controller.php');
 
-
-if (isset($_GET['histoire'])){
+// Récupération des fonctions du controller pour afficher les différentes vues
+if (isset($_GET['histoire'])){  
     histoire();
 }
 elseif(isset($_GET['home'])){
@@ -23,9 +23,12 @@ elseif(isset($_GET['newArticle'])){
 elseif(isset($_GET['newQuestions'])){
     newQuestions();
 }
-elseif (isset($_GET['action'])) {
+  
+// appel des fonctions du controller pour les actions (résultat du quizz, création d'articles, questions, réponses,  bouton de déconnection)
+elseif (isset($_GET['action'])) {       
+  
     if($_GET['action'] == 'quizResult') {
-        quizAnswer();
+        quizAnswer();       // appel de la fonction qui envoit sur la page du résultat du quizz
     }  
     elseif($_GET['action'] === 'create'){
         newArticleSave();
@@ -33,18 +36,18 @@ elseif (isset($_GET['action'])) {
     }
     
     elseif($_GET['action'] === 'questionCreated') {
-        $question_id =  questionCreated();  
-        newAnswers($question_id);  
+        $question_id =  questionCreated();  // Stockage de l'id de la dernière question créée dans une variable
+        newAnswers($question_id);       // Envoi sur la page de création de questions, avec l'id de la dernière question créée en paramètre
     }
     elseif($_GET['action'] === 'answersCreated') {
-        answersCreated();
-        header('location:index.php?quiz');
+        answersCreated();       // Appel de la fonction qui récupère les information du formulaire de création de questions
+        header('location:index.php?quiz'); // Renvoi vers la page de quiz
     }
     elseif($_GET['action'] === 'logout'){
-        logout();
+        logout();       // Appel de la fonction qui permet de se déconnecter (en tant qu'Admin)
     } 
 }
 
 else {
-    home();
+    home(); // N'importe quelle autre condition renvoie vers la page d'accueil
 }

@@ -26,41 +26,39 @@ function isChecked() {
         return false       
     }                  
 } 
+
 $(window).on(' load',function upDateNav(){
     if($(window).width()<990){
         $('.nav-style').removeClass('ml-auto');
     }
     if($(window).width()>=990){
         $('.nav-style').addClass('ml-auto');
-    }
-});
-$(window).on(' resize',function upDateNav(){
-    if($(window).width()<990){
-        $('.nav-style').removeClass('ml-auto');
-    }
-    if($(window).width()>=990){
-        $('.nav-style').addClass('ml-auto');
-    }
-});
-$(window).on(' load',function upDateNav(){
-    if($(window).width()<990){
-        $('.navHome').removeClass('ml-auto');
-    }
-    if($(window).width()>=990){
-        $('.navHome').addClass('ml-auto');
-    }
-});
-$(window).on(' resize',function upDateNav(){
-    if($(window).width()<990){
-        $('.navHome').removeClass('ml-auto');
-    }
-    if($(window).width()>=990){
-        $('.navHome').addClass('ml-auto');
     }
 });
 
-$('#shadow').hover(function () {
-    $(this).addClass('magictime puffIn');
+$(window).on(' resize',function upDateNav(){
+    if($(window).width()<990){
+        $('.nav-style').removeClass('ml-auto');
+    }
+    if($(window).width()>=990){
+        $('.nav-style').addClass('ml-auto');
+    }
+});
+$(window).on(' load',function upDateNav(){
+    if($(window).width()<990){
+        $('.navHome').removeClass('ml-auto');
+    }
+    if($(window).width()>=990){
+        $('.navHome').addClass('ml-auto');
+    }
+});
+$(window).on(' resize',function upDateNav(){
+    if($(window).width()<990){
+        $('.navHome').removeClass('ml-auto');
+    }
+    if($(window).width()>=990){
+        $('.navHome').addClass('ml-auto');
+    }
 });
 
 $('.btnCarouselNext').on('click', function(e) {
@@ -71,11 +69,23 @@ $('.btnCarouselNext').on('click', function(e) {
   $('.btnCarouselPrev').on('click', function(e) {
     e.preventDefault()
     $('.carousel').carousel('prev')
-  })
+  });
+  
 
-//   $(document).ready(function() {
-//     $('.carouselButton').click(function() {
-//         $('.carouselButton').toggleClass('activeButton');
+function callToActiveSlide(a,id) {
+    for(let i= 0; i<=7;i++) {
+        $('#slideshow2').carousel(a)
+    }
+    var li = $('activeButton');
+    if(li) {
+        $(".carouselButton").removeClass("activeButton");
+        $(id).addClass("activeButton");
+    }
+}
 
-//     })
-// })
+$(function() {
+    var button = $(".valider");
+    $(button).focus(function() { 
+        $(this).blur();
+    }); 
+});

@@ -13,7 +13,7 @@ body{
     color:black;
 }
 #body-template{
-    background-image: url('../ressources/background2.png') ;
+    background-image: url('../ressources/background2.jpg') ;
     background-attachment: fixed;
     background-position: center;
     background-size:cover;
@@ -31,7 +31,7 @@ video{
 }
 
 #logo {
-    position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
@@ -41,24 +41,9 @@ main {
     padding-top:30px;
    flex : 1 0 auto;
 }
-.backQuiz{
-    border:none;
-    background-color:rgba(255,255,255, 0.3);
-}
-footer{
- flex-shrink: 0 ;
- background-color:transparent;
- 
-}
-.links a {
-    color: black; 
-}
-.links a:hover {
-    text-decoration: none;
-}
-  .carousel-control {
+.carousel-control {
     display: none;
-  }
+}
 
 .carousel-inner h5{
     color:red;
@@ -68,42 +53,29 @@ footer{
     background-color:rgba(255,255,255, 0.3);
 }
 
-/* #slideshow1{
-    margin-left:16%;
-} */
 .nav a {
     color:white;
-    /* text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
-  */
-  
     font-size:22px;
     text-shadow:
    -1px -1px 0 #4074b5,  
     1px -1px 0 #4074b5,
     -1px 1px 0 #4074b5,
      1px 1px 0 #4074b5;
-
 }
 
 .nav a:hover {
-    /* -moz-transform: translate(0px, 8px);
--webkit-transform: translate(0px, 8px);
--o-transform: translate(0px, 8px);
--ms-transform: translate(0px, 8px);
-transform: translate(0px, 8px); */
--moz-transform: scale(1.3);
--webkit-transform: scale(1.3);
--o-transform: scale(1.3);
--ms-transform: scale(1.3);
-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
-
 .nav-link.active {
     -moz-transform: scale(1.3);
--webkit-transform: scale(1.3);
--o-transform: scale(1.3);
--ms-transform: scale(1.3);
-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
 .nav-style{
     border-radius: 0px 0px 40px 40px;
@@ -112,7 +84,7 @@ transform: scale(1.3);
     background: -webkit-linear-gradient(45deg, #73E0FF 0%, #FFFFFF 50%, #DCFE84 100%);
     background: linear-gradient(45deg, #73E0FF 0%, #FFFFFF 50%, #DCFE84 100%);
     -webkit-box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0); 
-box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0);
+    box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0);
     width:46%;
     font-family: 'Bangers', cursive;
 }
@@ -122,7 +94,6 @@ box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0);
     -webkit-box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0); 
     box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0);
     font-family: 'Bangers', cursive;
-
     width:46%;
 }
 #logoNav {
@@ -132,6 +103,7 @@ box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0);
 #shadow{
     filter: drop-shadow(-1px 4px 3px rgba(50, 50, 0, 0.5));
 }
+
 #rec{
     position:relative;
     padding: 1px;
@@ -212,7 +184,68 @@ box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0);
     transform: scale(0.8);
 }
 
+.carousel-indicators {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width:100%;
+}
 
+.carousel-indicators li {
+    background-color: transparent;
+    height: auto;
+    width: 50%;;
+    opacity: inherit;
+}
+
+.activeButton{
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4); 
+}
+.carousel-indicators li img {
+    display: block;
+    width:100%;
+    background-color:rgba(255,255,255, 0.3);
+    border-radius:30%;
+}
+.carousel-indicators li img:hover {
+    -moz-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
+.backQuiz{
+    border:none;
+    background-color:rgba(255,255,255, 0.3);
+}
+.valider {
+    background-color: transparent;
+    border:none;
+    border-radius:40%;
+}
+.valider:active{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+footer{
+    flex-shrink: 0 ;
+    background-color:transparent; 
+}
+.links a {
+    color: black; 
+}
+.links a:hover {
+    text-decoration: none;
+}
 @media screen and (max-width:1300px) {
     video {
         height:100%;
@@ -222,10 +255,9 @@ box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0);
     .nav-style, .navHome{
         display:flex;
          border:none;
-         width:60%;           
+         width:62%;           
     }
-
- }
+}
 @media screen and (max-width:990px) {
    .nav-style , .navHome{
        display:flex;
@@ -233,7 +265,9 @@ box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0);
         width:21%;   
         margin-left:3px;        
    }
- 
+   .carousel-indicators {
+    transform: translate(-80%,-50%) !important
+    }
     #logoNav{
         width:70px;
     }
@@ -244,14 +278,32 @@ box-shadow: 0px 10px 10px -10px #000000, 5px 5px 25px 0px rgba(0,0,0,0);
       margin-left:auto;
   }
 }
+
+@media screen and (max-width:650px) {
+    .nav-style , .navHome{
+        width:25%;
+    }
+    #logo{
+        width:80%;
+    }
+}
+@media screen and (max-width:575px) {
+    .carouselButtons{
+        display:none;
+    }
+}
 @media screen and (max-width:450px) {
+    /* .nav-style , .navHome{
+        width:30%;
+    } */
     .nav-style a, .navHome a{
         width:22%; 
-      font-size: 11px;    
+      font-size: 12px;    
     }
     .navUl{
         padding-left:10px;
     }
+  
     #rec{
         -moz-transform: scale(0.7);
     -webkit-transform: scale(0.7);
