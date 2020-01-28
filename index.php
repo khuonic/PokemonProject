@@ -31,8 +31,8 @@ elseif (isset($_GET['action'])) {
         quizAnswer();       // appel de la fonction qui envoit sur la page du résultat du quizz
     }  
     elseif($_GET['action'] === 'create'){
-        newArticleSave(); // Appel de la fonction qui récupère les information du formulaire de création d'articles
-        popCulture();       // Appel de la vue de la page Pop culture via la fonction Pop culture()
+        newArticleSave();
+        header('location:index.php?pop-culture');
     }
     
     elseif($_GET['action'] === 'questionCreated') {
