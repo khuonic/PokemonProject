@@ -63,11 +63,11 @@ ini_set('display_errors', 1);
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#slideshow1" role="button" data-slide="prev" onclick="$('#slideshow2').carousel('prev')">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span  aria-hidden="true"><img src="ressources/arrowLeft.png" style="width:40%;"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#slideshow1" role="button" data-slide="next" onclick="$('#slideshow2').carousel('next')">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span  aria-hidden="true"><img src="ressources/arrowRight.png" style="width:40%;"></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
