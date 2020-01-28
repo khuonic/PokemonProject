@@ -29,7 +29,7 @@ elseif (isset($_GET['action'])) {
     }  
     elseif($_GET['action'] === 'create'){
         newArticleSave();
-        popCulture();
+        header('location:index.php?pop-culture');
     }
     
     elseif($_GET['action'] === 'questionCreated') {

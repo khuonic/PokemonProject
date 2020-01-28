@@ -17,7 +17,7 @@ function dbConnect(){
 function getArticle($maxArticle, $offset){
     $db = dbConnect();
 
-    $req = $db->query("SELECT id, Title, Articles, Picture FROM Article ORDER BY RAND() LIMIT $maxArticle OFFSET $offset");
+    $req = $db->query("SELECT id, Title, Articles, Picture FROM Article ORDER BY id DESC LIMIT $maxArticle OFFSET $offset");
     return $req;
 }
 
@@ -80,7 +80,7 @@ function createAnswers($lastId,$answer) {
 
 function createArticles($title, $content, $author, $picture){
     $db = dbConnect();
-    $create = $db->prepare("INSERT INTO Article (Title, Articles, Author, Picture) VALUES (?, ?, ?, ?) ");
+    $create = $db->prepare("INSERT INTO Article (Title, Articles, Author, Picture) VALUES (?, ?, ?, ?)");
     $req = $create->execute(array($title, $content, $author, $picture));
     return $req;
 }
