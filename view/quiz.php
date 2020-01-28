@@ -48,7 +48,7 @@ ini_set('display_errors', 1);
                         }
                         $questions->closeCursor();
                         ?>
-                        <div id="alert" ></div>
+                        <div id="alert" class="col-12"></div>
                         <button type="submit" class="valider" name="save" onclick =" return isChecked()">
                             <img src="ressources/validerA.png" alt="valider">
                         </button>

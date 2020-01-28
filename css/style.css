@@ -10,7 +10,13 @@ body{
     height:100%;
     display:flex;
     flex-direction: column;
-    color:black;
+    color:#333;
+}
+
+body h2 {
+    color: #FFFFFF;
+
+text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
 }
 #body-template{
     background-image: url('../ressources/background2.jpg') ;
@@ -40,7 +46,7 @@ main {
 }
 
 .carousel-inner h5{
-    color:red;
+    color: red;
 } 
 
 .innerP{
@@ -297,7 +303,9 @@ footer{
     .navUl{
         padding-left:10px;
     }
-  
+    #alert{
+        font-size:12px;
+    }
     #rec{
         -moz-transform: scale(0.7);
     -webkit-transform: scale(0.7);

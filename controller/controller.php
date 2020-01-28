@@ -140,30 +140,30 @@ function quizResult() {
             $note+=1;
         }
     }
-    echo "<h3> Votre Score : </h3>";
-    echo $note . "/8<br><br /><br />";
+    echo "<h2> Votre Score : </h2><br>";
+    echo "<p style='color: #FFFFFF; text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8; font-size:22px;'>" . $note . "/8</p><br>";
     if($note <= 2) {
         $type_alert = "danger";
-        $message = '<img src="ressources/ResultatQuizz1.png" alt="resultat" class="col-lg-8 col-md-8 col-sm-9 col-12"/>' ;
+        $message = '<img src="ressources/ResultatQuizz1.png" alt="resultat" class="col-lg-6 col-md-8 col-sm-9 col-12"/>' ;
     }
 
     elseif($note >2 && $note <=4) {
         $type_alert = "danger";
-        $message = '<img src="ressources/ResultatQuizz2.png" alt="resultat" class="col-lg-8 col-md-8 col-sm-9 col-12"/>' ;
+        $message = '<img src="ressources/ResultatQuizz2.png" alt="resultat" class="col-lg-6 col-md-8 col-sm-9 col-12"/>' ;
     }
     elseif($note >4 && $note <=6) {
         $type_alert = "warning";
-        $message = '<img src="ressources/ResultatQuizz3.png" alt="resultat" class="col-lg-8 col-md-8 col-sm-9 col-12"/>';
+        $message = '<img src="ressources/ResultatQuizz3.png" alt="resultat" class="col-lg-6 col-md-8 col-sm-9 col-12"/>';
         
     }
     elseif($note >6 && $note <8) {
         $type_alert = "success";
-        $message = '<img src="ressources/ResultatQuizz4.png" alt="resultat" class="col-lg-8 col-md-8 col-sm-9 col-12"/>' ;
+        $message = '<img src="ressources/ResultatQuizz4.png" alt="resultat" class="col-lg-6 col-md-8 col-sm-9 col-12"/>' ;
        
     }
     elseif($note == 8) {
         $type_alert = "success";
-        $message = '<img src="ressources/ResultatQuizz5.png" alt="resultat" class="col-lg-8 col-md-8 col-sm-9 col-12"/>' ;
+        $message = '<img src="ressources/ResultatQuizz5.png" alt="resultat" class="col-lg-6 col-md-8 col-sm-9 col-12"/>' ;
     }
     echo " $message";
 }

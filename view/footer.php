@@ -1,9 +1,9 @@
         <footer class="font-small footer ">
             <div class=" text-center py-3 links " >
-                <?php echo'<img class="col-6 col-md-4 col-lg-2"src ="ressources/pokemoncompany.png" alt="img nintendo" />';?>
+                <?php echo'<img class="col-6 col-md-4 col-lg-1"src ="ressources/pokemoncompany.png" alt="img nintendo" />';?>
                 <br>
                 <br>
-                <?php echo '<img class="col-6 col-md-4 col-lg-2" src="ressources/logoNintendo.png" alt="img nintendo">'; ?>
+                <?php echo '<img class="col-6 col-md-4 col-lg-1" src="ressources/logoNintendo.png" alt="img nintendo">'; ?>
                 <br>
                 <br>
                 <a href="https://www.pokemon.com/fr/conditions-d-utilisation/">
