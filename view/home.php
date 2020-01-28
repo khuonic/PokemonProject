@@ -74,10 +74,10 @@
         
         <footer class="font-small footer" >
             <div class=" text-center py-3 links " >
-                <img src ="ressources/logo-pokemon-company.svg" alt="img nintendo">
+                <img class="col-6 col-md-4 col-lg-2"src ="ressources/pokemoncompany.png" alt="img nintendo" />
                 <br>
                 <br>
-                <img src ="ressources/logo-nintendo.svg" alt="img nintendo">
+                <img class="col-6 col-md-4 col-lg-2" src="ressources/logoNintendo.png" alt="img nintendo">'
                 <br>
                 <br>
                 <a href="https://www.pokemon.com/fr/conditions-d-utilisation/">
