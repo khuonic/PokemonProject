@@ -4,12 +4,12 @@
 ini_set('display_errors', 1);
 ?>
 
-    <div class="containder-fluid mt-5" style="overflow: hidden;">
+    <div class="containder-fluid mt-5 " id="generation" style="overflow: hidden;">
         <div class="col-sm-3 col-md-3 col-lg-2 carouselButtons">
             <ol class="carousel-indicators row text-center coucou .d-none ">
                 <img class="col-8 mb-1" src="ressources/Générations/panneau.png" > 
                 <li class="carouselButton activeButton" id="li1" data-target="#slideshow1" data-slide-to="0" data-toggle="list" class="col-12" onclick="callToActiveSlide(0,li1)">
-                    <img src="ressources/Générations/rougebleu2.png" >
+                    <img class="first" src="ressources/Générations/rougebleu2.png" >
                 </li>
                 <li class="carouselButton" id="li2" data-target="#slideshow1" data-slide-to="1" data-toggle="list"  class="col-12" onclick="callToActiveSlide(1,li2)"> 
                     <img src="ressources/Générations/orargent2.png">
@@ -38,7 +38,7 @@ ini_set('display_errors', 1);
             <div  id="slideshow1" class=" col-md-7 col-lg-6  col-sm-8 carousel container " data-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="ressources/Générations/rouge-bleu.gif" class="d-block w-100 magictime spaceInDown" alt=" version rouge-bleu" >
+                        <img src="ressources/Générations/rouge-bleu.gif" class="d-block w-100 magictime spaceInDown first" alt=" version rouge-bleu" >
                     </div>
                     <div class="carousel-item">
                         <img src="ressources/Générations/or-argent.gif" class="d-block w-100 magictime spaceInDown" alt="version or-argent">
@@ -82,25 +82,25 @@ ini_set('display_errors', 1);
                         <br>  
                         <div class="imagesContenuGenerations row">
                             <div class="rivaux col-10 col-sm-12 col-md-8 col-lg-3 ml-auto mr-auto mb-2">
-                                <img src="ressources/Générations/red.png" alt ="rival régis" style="width:30%;"> 
+                                <img class="first" src="ressources/Générations/red.png" alt ="rival régis" style="width:30%;"> 
                                 <br>
                                 <br>
                                 <text class="text-center">Red, personnage incarné par le joueur.</text>
                             </div> 
                             <div class="rivaux col-10 col-sm-12 col-md-8 col-lg-3 ml-auto mr-auto mb-2">
-                                <img src="ressources/Générations/rivalrb.png" alt ="rival régis" style="width:20%;"> 
+                                <img class="first" src="ressources/Générations/rivalrb.png" alt ="rival régis" style="width:20%;"> 
                                 <br>
                                 <br>
                                 <text class="text-center">Blue, rival du joueur dans la premiere génération.</text>
                             </div> 
                             <div class="prof col-10 col-sm-12 col-md-8 col-lg-3  ml-auto mr-auto mb-2">
-                                <img src="ressources/Générations/profchen_rb.png" alt ="Professeur Chen" style="width:40%;"> 
+                                <img class="first" src="ressources/Générations/profchen_rb.png" alt ="Professeur Chen" style="width:40%;"> 
                                 <br>
                                 <br>
                                 <text class="text-center">Le professeur Chen accueillant le joueur dans Pokémon Rouge et Bleu.</text>
                             </div>
                             <div class="team col-10 col-sm-12 col-md-8 col-lg-4 ml-auto mr-auto mb-2">
-                                <img src="ressources/Générations/teamrocketrb.png" alt ="rival régis" style="width:30%;"> 
+                                <img class="first" src="ressources/Générations/teamrocketrb.png" alt ="rival régis" style="width:30%;"> 
                                 
                                 <br>
                                 <text class="col-12 col-sm-12 col-md-4 text-center">Sbire de la Team Rocket, ennemis principaux du joueur. </text>
