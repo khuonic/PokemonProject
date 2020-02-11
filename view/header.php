@@ -63,7 +63,7 @@
                                     Se déconnecter
                                 </a>
                             </li>
-                        <?php endif?>
+                        <?php endif ?>
                     </ul>
                 </div>
             </nav>

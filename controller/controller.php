@@ -17,7 +17,7 @@ function generations () {
     require('view/generations.php');
 }
 
-//fonctionnement de la pagination pourla vue Popculture
+//fonctionnement de la pagination pour la vue Popculture
 function paginArticles(){
     $currentPage =($_GET['pop-culture'] ?? 1) ?: 1;
 
@@ -59,10 +59,30 @@ function popCulture () {
     //on recupère les variable retourné dans la fonction précédente
     $returnData = paginArticles();
     //on récupère les articles
-    $articles = getArticle($returnData[0], $returnData[1]);
+    $articles = getArticles($returnData[0], $returnData[1]);
     require('view/pop-culture.php');
     //on renvoi une nouvelles fois l'array de variable car nous en aurons encore besoin d'une pour la vue
     return $returnData;
+}
+// Permet de selectionner un article
+function post()
+{
+    $article = getArticle($_GET['id']);    
+}
+// Efface un article
+function eraseArticle() {
+    $article = getArticle($_GET['id']);
+    $articleDeleted = deleteArticle($_GET['id']);
+    header('location:index.php?pop-culture');
+}
+// Lance la vue de la page d'édition de l'article
+function edit() {
+    $article = getArticle($_GET['id']);
+    require('view/editArticleView.php');
+};
+// Sauvegarde les changements effectués dans le formulaire d'édition d'article
+function updateArticle() {
+    $update = saveEdit($_POST['Title'],$_POST['Article'],$_GET['id']);
 }
 //formulaire pour la création d'article
 function newArticleForm() {
@@ -172,18 +192,23 @@ function quizAnswer() {
 }
 function checkUser(){   
    if(!empty($_POST['username']) && !empty($_POST['password'])){
-        $erreur = null;
+        $erreur = false;
         $dataUser = getUsers($_POST['username']);
-        $User = $dataUser->fetch();
+        $User = $dataUser->fetch();       
             if($_POST['password'] === $User['Mdp']){
                 if (session_status() === PHP_SESSION_NONE){
                     session_start();
                 }
-                $_SESSION['connected'] =1;           
-            }else{
-                $erreur = 'Identifiants incorrects';
-                echo $erreur ;
-            }                 
+                $_SESSION['connected'] =1;                     
+            }  
+            // else {
+            //     $erreur=true;
+            //     if($erreur==true){
+            //         echo "<script>alert('Identifiants incorrects')</script>";
+            //         $erreur=false;
+            //     }
+            // }
+                    
         $dataUser->closeCursor();        
     }  
 }

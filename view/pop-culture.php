@@ -9,15 +9,22 @@ while ($data = $articles->fetch()){
 ?>
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-4 text-center mb-4 mt-4">
-            <div class="card  mb-3">
+        <div class="col-10 col-xs-8 col-md-8 col-lg-5 text-center mb-4 mt-5">
+            <div class="card  mb-3">            
             <img class="card-img-top" src="ressources/<?= htmlspecialchars($data['Picture'])?>" alt="Card image cap">
+            <?php  if(is_connected()): ?>
+                <div>
+                    <em><a href="index.php?action=edit&id=<?php echo $data['id']; ?>" class="btn btn-info">Editer</a></em>
+                    <em><a href="index.php?action=delete&id=<?php echo $data['id']; ?>" class="btn btn-danger">Supprimer</a></em>
+                </div>
+                <?php endif?>
                 <div class="card-body">
                     <h3>
                         <?= htmlspecialchars(utf8_encode($data['Title'])); ?>
+                        
                     </h3>
                     <p class="card-text">
-                    <?= htmlspecialchars(utf8_encode($data['Articles']));?>
+                    <?= htmlspecialchars(utf8_encode($data['Article']));?>
                     </p>
                 </div>
             </div>

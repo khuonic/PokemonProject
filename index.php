@@ -43,6 +43,17 @@ elseif (isset($_GET['action'])) {
         answersCreated();       // Appel de la fonction qui récupère les information du formulaire de création de questions
         header('location:index.php?quiz'); // Renvoi vers la page de quiz
     }
+    elseif($_GET['action'] == 'edit'){
+            edit();
+    }
+    elseif($_GET['action'] == 'articleEdited'){
+            updateArticle();
+            header('location:index.php?pop-culture');
+    }
+    elseif($_GET['action'] == 'delete'){
+        eraseArticle();
+        
+    }
     elseif($_GET['action'] === 'logout'){
         logout();       // Appel de la fonction qui permet de se déconnecter (en tant qu'Admin)
     } 
