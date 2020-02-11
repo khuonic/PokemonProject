@@ -56,7 +56,7 @@ ini_set('display_errors', 1);
                 </div>
             </div>
             <?php 
-                if(!empty($_SESSION['connected'])){ ?>
+                if(is_connected()){ ?>
                 <br>
                     <a href="index.php?newQuestions" class="btn btn-info">Add new Questions</a>   
             <?php }?>
