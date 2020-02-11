@@ -14,18 +14,26 @@ function dbConnect(){
 }
 
 // Récupération des articles dans la base de données
-function getArticle($maxArticle, $offset){ 
+function getArticles($maxArticle, $offset){ 
     $db = dbConnect();
 
-    $req = $db->query("SELECT id, Title, Articles, Picture FROM Article ORDER BY id DESC LIMIT $maxArticle OFFSET $offset");
+    $req = $db->query("SELECT id, Title, Article, Picture FROM Articles ORDER BY id DESC LIMIT $maxArticle OFFSET $offset");
     return $req;
 }
+function getArticle($ArticleId){
+	
+    $db = dbConnect();
+    $req = $db->prepare('SELECT id, Title, Article, Picture  FROM Articles WHERE id = ?');
+    $req->execute(array($ArticleId));
+    $article = $req->fetch();
 
+    return $article;
+}
 // Retourne le nombre total d'articles dans la base de données
 function getPaging(){   
     $db = dbConnect();
 
-    $req = $db->query('SELECT COUNT(id) FROM Article');
+    $req = $db->query('SELECT COUNT(id) FROM Articles');
     return $req;
 }
 
@@ -84,7 +92,22 @@ function createAnswers($lastId,$answer) {
  // Pour l'interface admin, création d'articles, avec insertion d'image possible
 function createArticles($title, $content, $author, $picture){
     $db = dbConnect();
-    $create = $db->prepare("INSERT INTO Article (Title, Articles, Author, Picture) VALUES (?, ?, ?, ?)");
+    $create = $db->prepare("INSERT INTO Articles (Title, Article, Author, Picture) VALUES (?, ?, ?, ?)");
     $req = $create->execute(array($title, $content, $author, $picture));
     return $req;
+}
+
+function deleteArticle($articleId) {
+
+    $db = dbConnect();
+    $req = $db -> prepare("DELETE FROM Articles WHERE id=?");
+    $delete = $req -> execute([$articleId]);
+}
+
+function saveEdit($Title,$article,$articleId) {
+
+    $db = dbConnect();   
+    $req = $db->prepare("UPDATE Articles SET Title = ?, Article = ? WHERE id =?");
+    $edit= $req->execute([$Title, $article, $articleId]); 
+                    
 }
