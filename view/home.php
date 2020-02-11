@@ -1,4 +1,6 @@
-<?php require_once('controller/controller.php'); ?>
+<?php require_once('controller/controller.php');
+alert();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

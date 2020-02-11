@@ -1,4 +1,6 @@
-<?php ob_start(); ?>
+<?php ob_start(); 
+require_once('controller/controller.php');
+?>
 
 <div class="row justify-content-center">
     <div class="col-8">

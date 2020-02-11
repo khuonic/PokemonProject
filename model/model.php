@@ -4,7 +4,7 @@
 function dbConnect(){ 
     try
     {
-        $db = new PDO('mysql:host=localhost;dbname=Quizz', 'root', 'toto');
+        $db = new PDO('mysql:host=localhost;dbname=Quiz_Pokemon', 'root', 'kevinkevin');
         return $db;
     }
     catch(Exception $e)
