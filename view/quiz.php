@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-lg-8 col-md-8 col-sm-12 col-12 text-center mb-4 mt-4">
-            <h2>Testez vos connaissances de dresseur !</h2>
+            <h2 class="">Testez vos connaissances de dresseur !</h2>
         </div>
     </div>
 </div>
@@ -56,7 +56,7 @@ ini_set('display_errors', 1);
                 </div>
             </div>
             <?php 
-                if(is_connected()){ ?>
+                if(!empty($_SESSION['connected'])){ ?>
                 <br>
                     <a href="index.php?newQuestions" class="btn btn-info">Add new Questions</a>   
             <?php }?>

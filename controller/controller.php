@@ -181,11 +181,15 @@ function checkUser(){
                 }
                 $_SESSION['connected'] =1;           
             }else{
-                $erreur = 'Identifiants incorrects';
-                echo $erreur ;
-            }                 
+                alert();
+            }
+                        
         $dataUser->closeCursor();        
     }  
+}
+
+function alert(){
+    echo "<script>alert('Identifiant Incorrecte')</script>" ;
 }
 
 function is_connected(){

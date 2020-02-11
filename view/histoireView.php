@@ -3,19 +3,23 @@
  ob_start(); 
 ini_set('display_errors', 1);
 ?>
+
+<div class="container-fluid">
+    <div class="row justify-content-center my-5">
+        <h2>Le créateur de Pokémon</h2>
+    </div>
+</div>
+
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-9 backQuiz">
             <!--------------------------------------------Début de la biographie du créateur de Pokemon--------------------------->
-            <div class="row justify-content-center my-5">
-                <h3>Le créateur de Pokémon</h3>
-            </div>
             <div class="row justify-content-center">
-                <div class="col-3" id="satoshi-div">
+                <div class="col-3 mt-5" id="satoshi-div">
                     <img id="satoshi" src="ressources/Satoshi Tajiri.jpg" alt="Satoshi Tajiri">
                     <p>Satoshi Tajiri né le 28 Août 1965</p>
                 </div>
-                <div class="col-7">
+                <div class="col-7 mt-5">
                     <p>Tajiri a passé son enfance dans une banlieue de Tokyo où il aimait collectionner les insectes, et les chassait partout, au bord des mares, dans les champs ou en forêt. 
                     Il en cherchait tout le temps de nouveaux et imaginait même de nouvelles techniques pour attirer les scarabées. 
                     Il était tellement attiré par les insectes, que ses copains l'appelaient « Dr. Bug. » .
@@ -33,31 +37,60 @@ ini_set('display_errors', 1);
                     <img id="scout" src="ressources/scout.png" alt="Scout">
                 </div>
             </div>
-            <!--------------------------------------------Fin de la biographie du créateur de Pokemon--------------------------->
-            <!--------------------------------------------Début du principe de Pokemon "jeux vidéo"--------------------------->
-            <div class="row justify-content-center my-5">
-                <h3>Le principe de pokemon "jeux vidéo"</h3>
-            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------------------Fin de la biographie du créateur de Pokemon--------------------------->
+ <!--------------------------------------------Début du principe de Pokemon "jeux vidéo"--------------------------->
+ <div class="container-fluid">
+    <div class="row justify-content-center my-5">
+        <h2>Le principe de pokemon "jeux vidéo"</h2>
+    </div>
+ </div>
+ 
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-9 backQuiz">
+            
             <div class="row justify-content-center my-5">
                 <h4>Le schéma de toute les générations</h4>
                 <p>Chaque générations commence dans une nouvelle région du monde Pokémon, souvent inspiré de région ou pays de la réalité.
-                    Le joueur incarne un enfant agé de 10 ans vivant seul chez sa mère dans un tout petit village et il décide de partir à l'aventure pour devenir maître pokémon.
-                    On incarne un garçon dans les deux première génération, le choix du genre arrivera lors de la troisième génération sorti en 2002.
-                    Le joueur vis généralement dans le même village que son/sa rival et/ou ami.e qui va le suivre tout le long de l'aventure ainsi qu'un professeur pokémon.
-                    Il y a généralement un professeur pokémon par région et il est celui qui donnera le premier pokémon du héros avant qu'il parte à l'aventure.
+                Le joueur incarne un enfant agé de 10 ans vivant seul chez sa mère dans un tout petit village et il décide de partir à l'aventure pour devenir maître pokémon.
+                On incarne un garçon dans les deux première génération, le choix du genre arrivera lors de la troisième génération sorti en 2002.
+                Le joueur vis généralement dans le même village que son/sa rival et/ou ami.e qui va le suivre tout le long de l'aventure ainsi qu'un professeur pokémon.
+                Il y a généralement un professeur pokémon par région et il est celui qui donnera le premier pokémon du héros avant qu'il parte à l'aventure.
                 </p>
             </div>
-            <!--------------------------------------------Fin du principe de Pokemon "jeux vidéo"--------------------------->
-            <!--------------------------------------------Début du principe de Pokemon "dessin animé"--------------------------->
-            <div class="row justify-content-center my-5">
-                <h3>Le principe de pokemon "dessin animé"</h3>
-            </div>
-            <!--------------------------------------------Fin du principe de Pokemon "dessin animé"--------------------------->
-            <!--------------------------------------------Début de la mythologie Pokemon--------------------------->
-            <div class="row justify-content-center my-5">
-                <h3>La création du monde Pokémon</h3>
-            </div>
-            <div class="row justify-content-center">
+        </div>
+    </div>
+</div>
+<!--------------------------------------------Fin du principe de Pokemon "jeux vidéo"--------------------------->
+<!--------------------------------------------Début du principe de Pokemon "dessin animé"--------------------------->
+<!-- <div class="container-fluid">
+    <div class="row justify-content-center my-5">
+        <h3>Le principe de pokemon "dessin animé"</h3>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-9 backQuiz">
+        </div>
+    </div>
+</div> -->
+<!--------------------------------------------Fin du principe de Pokemon "dessin animé"--------------------------->
+<!--------------------------------------------Début de la mythologie Pokemon--------------------------->
+<div class="container-fluid">
+    <div class="row justify-content-center my-5">
+        <h2>La création du monde Pokémon</h2>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-9 backQuiz">
+        <div class="row justify-content-center">
                 <img id="" src="ressources/cenepokemon.jpg" alt="Cene Pokemon">
             </div>
             <div class="row justify-content-center"><div class="col-3 my-5"><h4>La naissance des dieux</h4></div></div>
@@ -142,10 +175,11 @@ ini_set('display_errors', 1);
                 </div>
                 <div class="col-3 mt-5"><img class="pokemonimg mt-3" src="ressources/lugiaethooh.jpg" alt="Rayquaza"></div>
             </div>
-            <!--------------------------------------------Fin de la mythologie Pokemon--------------------------->
         </div>
     </div>
 </div>
+<!--------------------------------------------Fin de la mythologie Pokemon--------------------------->
+  
 
 
 <?php $content = ob_get_clean(); ?>

@@ -29,7 +29,7 @@ while ($data = $articles->fetch()){
 $articles->closeCursor();
 ?>
 <?php 
-if(is_connected()): ?>
+if(!empty($_SESSION['connected'])): ?>
     <div class="row justify-content-center">
         <a href="index.php?newArticle" class="btn btn-info">Add</a>
     </div>

@@ -15,8 +15,7 @@ body{
 
 body h2 {
     color: #FFFFFF;
-
-text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
 }
 #body-template{
     background:url('../ressources/background2.jpg') no-repeat  center fixed, -moz-linear-gradient(top, #73E2FE 0%, #b1f0ff 86%, #C0F34E 100%);
