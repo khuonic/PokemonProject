@@ -25,7 +25,7 @@ ini_set('display_errors', 1);
                         <input type="number" name="idQuestion" value="<?= $lastId; ?>" style='display:none;'>
                     </div>
                     <div class="form-group col-12">
-                        <button type="submit" class="btn btn-primary" name="save">Create Answers </button>
+                        <button type="submit" class="btn btn-primary" name="save">Créer les réponses</button>
                     </div>
             </form>
         </div>

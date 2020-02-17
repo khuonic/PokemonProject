@@ -75,8 +75,8 @@ alert();
             <div id="slideshow2" class=" col-md-8 col-lg-7  col-sm-8 carousel  container mt-5 mb-5" data-interval="false">
                 <div class="carousel-inner innerP">
                     <div class="carousel-item active text-center magictime spaceInDown">                       
-                        <h5 class="mt-3">Pokemon 1ère Génération</h5>
-                        <p>Pokémon version Rouge et Pokémon version Bleue sont les tout premiers jeu de la franchise Pokémon à avoir débarqué sur notre vieux continent, en 1999. Ces versions vont installer ce qui va devenir la base du RPG Pokémon pour toutes les générations suivantes.
+                        <h5 class="mt-3">Pokémon 1ère Génération</h5>
+                        <p class="col-10 mr-auto ml-auto">Pokémon version Rouge et Pokémon version Bleue sont les tout premiers jeu de la franchise Pokémon à avoir débarqué sur notre vieux continent, en 1999. Ces versions vont installer ce qui va devenir la base du RPG Pokémon pour toutes les générations suivantes.
                         Dans Pokémon Rouge et Bleu, vous allez parcourir pour la toute première fois la région de Kanto, et par la même occasion découvrir les 151 Pokémon qui s'y cachent. 
                         </p>
                         <h6><u><b>Liste des protagonistes principaux : </b></u></h6>   
@@ -109,8 +109,8 @@ alert();
                         </div>                    
                     </div>
                     <div class="carousel-item text-center magictime spaceInDown">                     
-                        <h5 class="mt-3">Pokemon 2ème Génération</h5>
-                        <p>Cette deuxième génération de Pokémon est apparue à la fin de l'année 1999 au Japon et est arrivée en avril 2001 en France.
+                        <h5 class="mt-3">Pokémon 2ème Génération</h5>
+                        <p class="col-10 mr-auto ml-auto">Cette deuxième génération de Pokémon est apparue à la fin de l'année 1999 au Japon et est arrivée en avril 2001 en France.
                         Elle réunit 100 nouveaux Pokémon ce qui porte leur nombre à 251, les versions Or et Argent nous font donc découvrir une nouvelle région du monde Pokémon : Johto, région sitée à l'ouest de Kanto, la région des versions précédentes.</p>
                         <h6><u><b>Liste des protagonistes principaux : </b></u></h6>   
                         <br>  
@@ -142,8 +142,8 @@ alert();
                         </div>                               
                     </div>
                     <div class="carousel-item text-center magictime spaceInDown">
-                        <h5 class="mt-3">Pokemon 3ème Génération</h5>
-                        <p>La troisième génération de Pokémon est apparue en novembre 2002 au Japon et est arrivée en juillet 2003 en France.
+                        <h5 class="mt-3">Pokémon 3ème Génération</h5>
+                        <p class="col-10 mr-auto ml-auto">La troisième génération de Pokémon est apparue en novembre 2002 au Japon et est arrivée en juillet 2003 en France.
                         Elle nous présente 135 nouveaux Pokémon, ce qui porte leur nombre total à 386 Pokémon. Sur ces versions Pokémon Rubis et Saphir, on découvre la région d'Hoenn qui ne semble pas avoir de frontière commune avec les précédentes régions, Johto et Kanto.</p>
                         <h6><u><b>Liste des protagonistes principaux : </b></u></h6>   
                         <br>  
@@ -178,8 +178,8 @@ alert();
                         </div>
                     </div>
                     <div class="carousel-item text-center magictime spaceInDown">
-                        <h5 class="mt-3">Pokemon 4ème Génération</h5>
-                        <p>
+                        <h5 class="mt-3">Pokémon 4ème Génération</h5>
+                        <p class="col-10 mr-auto ml-auto">
                         Pokémon Diamant et Perle sont les premiers jeux de la quatrième génération. Sortis en septembre 2006 au Japon et en juillet 2007 en Europe, ils nous font découvrir la toute nouvelle région de Sinnoh et ses 107 nouveaux Pokémon.</p>
                         <h6><u><b>Liste des protagonistes principaux : </b></u></h6>   
                         <br>  
@@ -213,8 +213,8 @@ alert();
                         </div>
                     </div>
                     <div class="carousel-item text-center magictime spaceInDown">
-                        <h5 class="mt-3">Pokemon 5ème Génération</h5>
-                        <p>La légende renaît dans Pokémon version Noire et Pokémon version Blanche  dans la toute nouvelle région d'Unys à explorer. Il s'agit de jeux Nintendo DS, disponibles depuis le 18 septembre 2010 au Japon, depuis le 4 mars 2011 en France . </p>
+                        <h5 class="mt-3">Pokémon 5ème Génération</h5>
+                        <p class="col-10 mr-auto ml-auto">La légende renaît dans Pokémon version Noire et Pokémon version Blanche  dans la toute nouvelle région d'Unys à explorer. Il s'agit de jeux Nintendo DS, disponibles depuis le 18 septembre 2010 au Japon, depuis le 4 mars 2011 en France . </p>
                         <h6><u><b>Liste des protagonistes principaux : </b></u></h6>   
                         <br>
                         <div class="imagesContenuGenerations row">
@@ -247,8 +247,8 @@ alert();
                         </div>  
                     </div>
                     <div class="carousel-item text-center magictime spaceInDown">
-                        <h5 class="mt-3">Pokemon 6ème Génération</h5>
-                        <p>Pokémon X  et Pokémon Y  sont les deux versions principales du RPG Pokémon pour la sixième génération. Se déclinant sous forme de deux versions complémentaires, il s'agit de jeux Nintendo 3DS, sortis mondialement le 12 octobre 2013. Une sortie mondiale est une première pour un jeu Pokémon, tout comme la possibilité de choisir la langue en début de jeu (pour la série principale). Les langues disponibles sont le français, l'allemand, l'anglais, le coréen, l'espagnol, l'italien, et le japonais.</p>
+                        <h5 class="mt-3">Pokémon 6ème Génération</h5>
+                        <p class="col-10 mr-auto ml-auto">Pokémon X  et Pokémon Y  sont les deux versions principales du RPG Pokémon pour la sixième génération. Se déclinant sous forme de deux versions complémentaires, il s'agit de jeux Nintendo 3DS, sortis mondialement le 12 octobre 2013. Une sortie mondiale est une première pour un jeu Pokémon, tout comme la possibilité de choisir la langue en début de jeu (pour la série principale). Les langues disponibles sont le français, l'allemand, l'anglais, le coréen, l'espagnol, l'italien, et le japonais.</p>
                         <h6><u><b>Liste des protagonistes principaux : </b></u></h6>   
                         <br>
                         <div class="imagesContenuGenerations row">
@@ -280,8 +280,8 @@ alert();
                         </div>  
                     </div>
                     <div class="carousel-item text-center magictime spaceInDown">
-                        <h5 class="mt-3">Pokemon 7ème Génération</h5>
-                        <p>Pokémon Soleil et Pokémon Lune ont été annoncés le 26 février 2016 (27 février pour le Japon), soit le jour des 20 ans de Pokémon ! Ils sont sortis le 23 novembre 2016 en Europe.Le jeu se déroule dans la région insulaire et paradisiaque d'Alola, inspirée de l'île d'Oahu, dans l'archipel d'Hawaï.</p>
+                        <h5 class="mt-3">Pokémon 7ème Génération</h5>
+                        <p class="col-10 mr-auto ml-auto">Pokémon Soleil et Pokémon Lune ont été annoncés le 26 février 2016 (27 février pour le Japon), soit le jour des 20 ans de Pokémon ! Ils sont sortis le 23 novembre 2016 en Europe.Le jeu se déroule dans la région insulaire et paradisiaque d'Alola, inspirée de l'île d'Oahu, dans l'archipel d'Hawaï.</p>
                         <h6><u><b>Liste des protagonistes principaux : </b></u></h6>   
                         <br>
                         <div class="imagesContenuGenerations row">
@@ -316,8 +316,8 @@ alert();
                         </div>  
                     </div>
                     <div class="carousel-item text-center magictime spaceInDown">
-                        <h5 class="mt-3">Pokemon 8ème Génération</h5>
-                        <p>Pokémon Épée et Bouclier sont des jeux sur Nintendo Switch qui ont été annoncés le 27 février 2019 dans un Pokémon Direct. Les jeux sont sortis mondialement le 15 novembre 2019 et introduisent la 8ème génération de Pokémon ! Parcourez la région de Galar dans ces deux nouveaux opus !</p>
+                        <h5 class="mt-3">Pokémon 8ème Génération</h5>
+                        <p class="col-10 mr-auto ml-auto">Pokémon Épée et Bouclier sont des jeux sur Nintendo Switch qui ont été annoncés le 27 février 2019 dans un Pokémon Direct. Les jeux sont sortis mondialement le 15 novembre 2019 et introduisent la 8ème génération de Pokémon ! Parcourez la région de Galar dans ces deux nouveaux opus !</p>
                         <h6><u><b>Liste des protagonistes principaux : </b></u></h6>   
                         <br>
                         <div class="imagesContenuGenerations row">
