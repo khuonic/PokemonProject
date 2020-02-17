@@ -15,7 +15,7 @@ while ($data = $articles->fetch()){
             <img class="card-img-top" src="ressources/<?= htmlspecialchars($data['Picture'])?>" alt="Card image cap">
             <?php  if(is_connected() ):  ?>
                 <div>
-                    <em><a href="index.php?action=edit&id=<?php echo $data['id']; ?>" class="btn btn-info">Editer</a></em>
+                    <em><a href="index.php?action=edit&id=<?php echo $data['id']; ?>" class="btn btn-info">Éditer</a></em>
                     <em><a href="index.php?action=delete&id=<?php echo $data['id']; ?>" class="btn btn-danger">Supprimer</a></em>
                 </div>
                 <?php endif?>
@@ -39,7 +39,7 @@ $articles->closeCursor();
 <?php 
 if(is_connected()): ?>
     <div class="row justify-content-center">
-        <a href="index.php?newArticle" class="btn btn-info">Add</a>
+        <a href="index.php?newArticle" class="btn btn-info">Ajouter un article</a>
     </div>
     
 <?php endif?>

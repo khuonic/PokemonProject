@@ -11,7 +11,7 @@ ini_set('display_errors', 1);
                         <label for="formGroupExampleInput">Question</label>
                         <input type="text" class="form-control"  name="question" required >
                 </div>
-                <button type="submit" class="btn btn-primary" name="save">Create Question</button>
+                <button type="submit" class="btn btn-primary" name="save">Créer une question</button>
             </form>
             <br>
             <br>

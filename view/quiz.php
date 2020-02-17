@@ -59,7 +59,7 @@ alert();
             <?php 
                 if(!empty($_SESSION['connected'])){ ?>
                 <br>
-                    <a href="index.php?newQuestions" class="btn btn-info">Add new Questions</a>   
+                    <a href="index.php?newQuestions" class="btn btn-info">Ajouter des questions</a>   
             <?php }?>
         </div>
     </div>

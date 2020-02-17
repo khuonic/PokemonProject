@@ -15,13 +15,23 @@ elseif(isset($_GET['pop-culture'])){
     popCulture();
 }
 elseif(isset($_GET['quiz'])){
-    quiz();
+    quiz();   
 }
 elseif(isset($_GET['newArticle'])){
-    newArticleForm();
+    if(is_connected()){
+        newArticleForm();
+    }else {
+        header('location:index.php?pop-culture');
+    }
+
 }
 elseif(isset($_GET['newQuestions'])){
-    newQuestions();
+    if(is_connected()){
+        newQuestions();
+    }
+    else {
+        header('location:index.php?quizz');
+    }    
 }
   
 // appel des fonctions du controller pour les actions (résultat du quizz, création d'articles, questions, réponses,  bouton de déconnection)
