@@ -2,6 +2,7 @@
 <?php
  ob_start(); 
 ini_set('display_errors', 1);
+alert();
 ?>
 
 <div class="container-fluid">
@@ -97,13 +98,13 @@ ini_set('display_errors', 1);
             
             
             <div class="row justify-content-center">
-                <div class="col-4 mt-5">
-                    <div class="my-5">
+                <div class="col-sm-12 col-lg-4 mt-5 text-center">
+                    <div class="">
                         <h5>Arceus, le dieu suprême</h5>
                     </div>
                     <p>Au commencement, alors que seul le néant existait, du millieu du vide naquit un œuf. Vous l'aurez deviné, de l'intérieur de cet œuf émergea celui qui allait devenir la source elle même de toute chose, <strong> Arceus</strong>, le dieu des Pokémon.</p>
                 </div>
-                <div class="col-3 pokemonimgcontainer"><img class="pokemonimg" src="ressources/arceus2.jpg" alt="Arceus"></div>
+                <div class="col-6 col-sm-6 col-md-3 pokemonimgcontainer"><img class="pokemonimg" src="ressources/arceus2.jpg" alt="Arceus"></div>
             </div>
 
             

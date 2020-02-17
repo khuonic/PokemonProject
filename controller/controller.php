@@ -191,28 +191,37 @@ function quizAnswer() {
     require('view/quizAnswer.php');
 }
 function checkUser(){   
+    
    if(!empty($_POST['username']) && !empty($_POST['password'])){
-        $erreur = false;
         $dataUser = getUsers($_POST['username']);
+        $erreur=true;
         $User = $dataUser->fetch();       
             if($_POST['password'] === $User['Mdp']){
                 if (session_status() === PHP_SESSION_NONE){
                     session_start();
                 }
-                $_SESSION['connected'] =1;           
-            }else{
-                alert();
+                $_SESSION['connected'] =1;       
+                $erreur=false;   
+                return $erreur;   
+            }else{              
+                $erreur=true;   
+                return $erreur;  
             }
-                        
+               
         $dataUser->closeCursor();        
     }  
+    
 }
 
 function alert(){
-    echo "<script>alert('Identifiant Incorrecte')</script>" ;
+    $erreur=checkUser();
+    if($erreur==true){
+        echo "<script>alert('Identifiants Incorrects')</script>" ; 
+    }
+          
 }
 
-function is_connected(){
+function is_connected(){   
     checkUser();
     if (session_status() === PHP_SESSION_NONE){
         session_start();

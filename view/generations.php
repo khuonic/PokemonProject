@@ -2,6 +2,7 @@
 <?php
  ob_start(); 
 ini_set('display_errors', 1);
+alert();
 ?>
 
     <div class="containder-fluid mt-5 " id="generation" style="overflow: hidden;">

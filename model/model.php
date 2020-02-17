@@ -17,13 +17,13 @@ function dbConnect(){
 function getArticles($maxArticle, $offset){ 
     $db = dbConnect();
 
-    $req = $db->query("SELECT id, Title, Article, Picture FROM Articles ORDER BY id DESC LIMIT $maxArticle OFFSET $offset");
+    $req = $db->query("SELECT id, Title, Articles, Picture FROM Article ORDER BY id DESC LIMIT $maxArticle OFFSET $offset");
     return $req;
 }
 function getArticle($ArticleId){
 	
     $db = dbConnect();
-    $req = $db->prepare('SELECT id, Title, Article, Picture  FROM Articles WHERE id = ?');
+    $req = $db->prepare('SELECT id, Title, Articles, Picture  FROM Article WHERE id = ?');
     $req->execute(array($ArticleId));
     $article = $req->fetch();
 
@@ -33,7 +33,7 @@ function getArticle($ArticleId){
 function getPaging(){   
     $db = dbConnect();
 
-    $req = $db->query('SELECT COUNT(id) FROM Articles');
+    $req = $db->query('SELECT COUNT(id) FROM Article');
     return $req;
 }
 
