@@ -11,6 +11,7 @@ body{
     display:flex;
     flex-direction: column;
     color:#333;
+    font-family: 'Eczar', serif;
 }
 
 body h2 {
@@ -23,7 +24,7 @@ body h2 {
     background:url('../ressources/background2.jpg') no-repeat  center fixed, -webkit-linear-gradient(top, #73E2FE 0%, #b1f0ff 86%, #C0F34E 100%);
 }
 video{
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -204,11 +205,18 @@ main {
 }
 
 .activeButton{
-    -moz-transform: scale(1.4);
-    -webkit-transform: scale(1.4);
-    -o-transform: scale(1.4);
-    -ms-transform: scale(1.4);
-    transform: scale(1.4); 
+    -moz-transform: scale(1.30);
+    -webkit-transform: scale(1.30);
+    -o-transform: scale(1.30);
+    -ms-transform: scale(1.30);
+    transform: scale(1.30); 
+}
+.activeButton:hover{
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); 
 }
 .carousel-indicators li img {
     display: block;
@@ -303,11 +311,6 @@ border-radius:30%;
     width:100%;
 }
 
-@media screen and (max-width:1300px) {
-    video {
-        height:100%;
-    }
-}
 @media screen and (max-width:1330px) {
     .nav-style, .navHome{
         display:flex;
