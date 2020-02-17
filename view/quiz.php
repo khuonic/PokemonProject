@@ -38,13 +38,13 @@ alert();
                                     <label for="<?= $dataA['id_answer']?>" style="cursor:pointer;"><?= htmlspecialchars(utf8_encode($dataA['answer']));?> </label>   
                                 </div>
                             </div>
-
-
                             <?php        
                                 }  
                             }
                             $answers->closeCursor();
                             ?>
+                            
+                        <hr class = "col-8">
                         <?php
                         }
                         $questions->closeCursor();
